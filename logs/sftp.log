@@ -1,0 +1,12 @@
+Jan 30 01:06:58 - u39786934 debug1: session_close_by_channel: channel 0 child 13402
+Jan 30 01:06:58 - u39786934 debug1: session_close_by_channel: channel 0: has child
+Jan 30 01:06:58 - u39786934 debug1: session_close_by_channel: channel 0 child 0
+Jan 30 01:06:58 - u39786934 debug1: session_close: session 0 pid 0
+Jan 30 01:06:58 - u39786934 Connection closed by 99.140.249.253
+Jan 30 01:06:58 - u39786934 Closing connection to 99.140.249.253 port 51891
+Feb  2 21:49:41 - u39786934 SFTP session started in /kunden/homepages/20/d153810528/htdocs
+Feb  2 21:49:41 - u39786934 Client version 3
+Feb  2 21:49:53 - u39786934 SFTP session started in /kunden/homepages/20/d153810528/htdocs
+Feb  2 21:49:53 - u39786934 Client version 3
+Feb  2 21:50:09 - u39786934 SFTP session started in /kunden/homepages/20/d153810528/htdocs
+Feb  2 21:50:09 - u39786934 Client version 3

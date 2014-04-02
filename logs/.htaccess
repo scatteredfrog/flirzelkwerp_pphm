@@ -1,0 +1,10 @@
+Options +Indexes
+Satisfy any
+Order Deny,Allow
+Allow from 212.227.112.228
+Deny from all
+RemoveType .html .gif
+AuthType Basic
+AuthName "Access to /logs"
+AuthUserFile /kunden/homepages/20/d153810528/htpasswd
+Require user u39786934
