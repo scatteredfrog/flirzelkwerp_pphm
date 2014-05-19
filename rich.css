@@ -7,7 +7,7 @@ p {  font-family: "Franklin Gothic Medium", "Trebuchet MS"; font-size: 13pt}
 h3 {  font-family: "Franklin Gothic Medium", "Trebuchet MS"; font-size: 19pt; text-transform: uppercase; color: #333300; font-style: oblique; font-weight: bolder; text-align: left; vertical-align: baseline}
 dt {  font-family: Arial, Helvetica, sans-serif; font-size: 12pt; font-style: normal; font-weight: bolder; color: #003333}
 .pic_caption {  font-family: Arial, Helvetica, sans-serif; font-size: 11pt; font-style: italic}
-dl {  font-family: "Franklin Gothic Medium", "Trebuchet MS"; font-size: 13pt}
+dl, .prehead {  font-family: "Franklin Gothic Medium", "Trebuchet MS"; font-size: 13pt}
 li {  font-family: "Franklin Gothic Medium", "Trebuchet MS"; font-size: 13pt; list-style-position: inside; }
 #nonMenu { width:500px; margin-left:12px; }
 caption {  font-family: Arial, Helvetica, sans-serif; font-size: 11pt; font-style: italic}
@@ -21,3 +21,5 @@ caption {  font-family: Arial, Helvetica, sans-serif; font-size: 11pt; font-styl
 #rich_judy { position: relative; width:602px; text-align: center; float: left; font-family: "Comic Sans MS"; font-weight: bold; font-style: italic; }
 .handyHeader { font-size: 17px; }
 .handyBullets { font-size: 14px; }
+.services { margin:5px 12px; padding:5px 12px; }
+.services li { width:550px; }
