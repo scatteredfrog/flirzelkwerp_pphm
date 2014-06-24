@@ -2,7 +2,7 @@
 	font: normal Arial, Sans-Serif, Helvetica;
 }
 
-ul
+.level1
 {
     display: block;
     margin: 0;
@@ -17,18 +17,18 @@ li.folder {
 	border: 0;
 }
 
-ul {
+.level1{
 	width: 191px;
 	list-style-type: disc; 
 }
 
-li {
+#menu #sidenav li {
 	position: relative;
 	padding: 0px;
 	z-index: 9;
 }
 
-li.folder	{
+#menu #sidenav li.folder	{
 	font: normal 14px Arial, Sans-Serif, Helvetica;
         display: block;
         font-style: italic;
@@ -38,7 +38,7 @@ li.folder	{
 	border-bottom: 1px solid lightgray;
 }	
 
-li.sm	{
+#menu #sidenav li.sm	{
         list-style-type: none;
 	font: normal 14px Arial, Sans-Serif, Helvetica;
         display: block;
@@ -46,19 +46,19 @@ li.sm	{
 	background-color: #FFF;
 }	
 
-li.folder:hover {
+#menu li.folder:hover {
 	z-index: 10;
 	background-color: #EFEFEF;
 }
 		
-li.folder ul {
+#menu #sidenav li.folder ul {
 	position: absolute;
 	display: none;
 	left: 190px;
 	top: 5px;
 }
 				
-li.folder>ul { 
+#menu #sidenav li.folder>ul { 
 	left: 190px;
 }
 		
@@ -73,11 +73,11 @@ a {
 	width: 100%;
 }
 
-li>a { 
+#menu #sidenav li>a { 
 	width: auto;
 }
 
-li a.submenu {
+#menu #sidenav li a.submenu {
 	background-color: #D6D6D6;
         position: relative;
         top: -25px;

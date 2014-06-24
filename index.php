@@ -23,6 +23,7 @@
 <body bgcolor="#CCCCCC">
 <script src="js/jquery-1.8.0.min.js"></script>
 <script src='js/jquery.simpletip-1.3.1.js'></script>
+<script src="js/jquery.qtip-1.0.0-rc3.min.js"></script>
 <p>&nbsp;</p>
 <table width="800" border="0" cellspacing="2" cellpadding="2" align="center" bgcolor="#FFFFFF">
 <!--BEGINNING OF BODY-->
@@ -39,9 +40,16 @@
                         <div id='judy'><div id="headshot_judy"></div>Judy<br />The Handyma'am</div>
                         <div id='rich'><div id="headshot_rich"></div>Rich<br />The Handyman</div>
                     </div>
-                    <div id='rich_judy'><span class='italicHeader'>We Work Well Together</span><br />Call (773) 282-5857<br />
-            Or <a href="contact.php">email</a> 
-            to get a specific estimate.</div></p>
+                    <div id='rich_judy'><span class='italicHeader'>We Work Well Together</span><br />
+                        <span style="font-size:7px;">&nbsp;<br/></span>
+                        Call (773) 282-5857 or <a href="contact.php">email</a> 
+                            to get a specific estimate.<br/>
+                        Hours: M-F 8:00am - 5:30pm, until 8:00pm on some Thursdays<br />
+                        <span style="font-size:14px;">Emergency after-hours/weekend service for established customers when possible</span>
+                    </div></p>
+            <p>
+                <span id="how_green">How Green Is Your Handyman?</span>
+            </p>
         </td>
 <!--        <td valign="top" align="right" width="140"></td></tr>-->
             <tr>
@@ -69,7 +77,7 @@
             <b>4) Service.</b> Rich's history of helpfulness includes spending 20 years as an RN in the Cook County
                 Trauma Unit.<p>
             <b>3) Guaranteed results.</b> We guarantee our work for a <u>minimum</u> of one year -- just like the franchises - and we 
-                will do everything possible to make sure my customers are satisfied.<p>
+                will do everything possible to make sure our customers are satisfied.<p>
             <b>2) Promptness.</b> We return calls as quickly as possible. On the rare occasion that we miss one, we do appreciate
                 reminders, but we're not the type who don't return your calls.<p>
             <b>1) Care.</b> We work in and on your home with as much care as we would want in and on our own home.</b></dl>
@@ -80,15 +88,52 @@
 
 </table>
 <script>
-    $('#judy').simpletip({
-        content:
-            "Judy's specialties:<ul><li id='test'>A Horticulturalist who knows city curb appeal</li><li id='test2'>A Handyma'am who's a better painter than he is</li><li>Organization</li></ul>",
-        fixed: true
+//    $('#judy').simpletip({
+//        content:
+//            "Judy's specialties:<ul><li id='test'>A Horticulturalist who knows city curb appeal</li><li id='test2'>A Handyma'am who's a better painter than he is</li><li>Organization</li></ul>",
+//        fixed: true
+//    });
+    $('#judy').qtip({
+        style: {
+            'font-size': '14px',
+            'font-family': 'Arial,Helvetica',
+            'font-style': 'italic', 
+            border: { radius: 8, color: '#ff6c6c' },
+            tip: 'leftMiddle',
+            width: '250px',
+            'background-color': 'moccasin'
+        },
+        content: "Judy's specialties:<ul><li id='test'>A Horticulturalist who knows city curb appeal</li><li id='test2'>A Handyma'am who's a better painter than he is</li><li>Organization</li></ul>",
+        show: 'mouseover',
+        hide: 'mouseout',
+        position: { adjust: {
+                x:10, y: -210 }
+            }
     });
-    $('#rich').simpletip({
+    
+//    $('#rich').simpletip({
+//        content:
+//            "Rich's specialties:<ul><li id='test'>Experienced handyman with 10+ years in the business</li><li id='test2'>Fixing the little things that bother you</li><li>A creative storage specialist</li></ul>",
+//        fixed: true
+//    });
+
+    $('#rich').qtip({
+        style: {
+            'font-size': '14px',
+            'font-family': 'Arial,Helvetica',
+            'font-style': 'italic', 
+            border: { radius: 8, color: '#00006c' },
+            tip: 'rightMiddle',
+            width: '250px',
+            'background-color': '#00D8FF'
+        },
         content:
             "Rich's specialties:<ul><li id='test'>Experienced handyman with 10+ years in the business</li><li id='test2'>Fixing the little things that bother you</li><li>A creative storage specialist</li></ul>",
-        fixed: true
+        show: 'mouseover',
+        hide: 'mouseout',
+        position: { adjust: {
+                x:-585, y: -210 }
+            }
     });
 </script>
 </body>

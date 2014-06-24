@@ -1,7 +1,7 @@
 <html><!-- #BeginTemplate "/Templates/template0.dwt" -->
 <head>    
 <!-- #BeginEditable "doctitle" --> 
-<title>Portage Park Handyman - Services</title>
+<title>Portage Park Handyman - Garden Services</title>
 <!-- #EndEditable --> 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <meta name="keywords" content="Handyman Chicago Portage Park Repair Remodeling Home Repair Improvement Richard Escallier">
@@ -20,7 +20,7 @@
     <tr>
         <td valign="top"><table width="192"> <!-- BEGIN LINK TABLE W/LOGO -->
         <td><img src="images/logo_trans_r1_c1.gif"></img><br />
-        <? include "links.html"; ?>
+        <?php include "links.html"; ?>
         </td></table><!-- END LINK TABLE W/LOGO -->
             <td valign="top"><table width="608" height="118"> <!-- BEGIN TABLE ON RIGHT-->
         <td valign="middle">
@@ -34,6 +34,8 @@
           <tr><td id="kwerp">
                 <h3>Gardens by Portage Park Services</h3>
                 <br />
+                <div class='headerImage' id='garden_header_image'>
+                </div>
                 <div class="prehead">
                     Would you like to enhance your curb appeal, the enjoyment of your garden, and 
                     increasing your property value? It's the &num;2 home improvement that pays off. 
@@ -42,10 +44,11 @@
                 </div>
                 <br />
                 <div id="tab_container">
-                    <div class="tab_spacer"></div><div class="tab" ng-click="focusTab('design')" id="design"><span class='tab_name'>Garden Design</span></div>
-                    <div class="tab_spacer"></div><div class="tab tab_back tab_wide" ng-click="focusTab('consultation')" id="consultation"><span class='tab_name'>Garden Consultation</span></div>
+                    <div class="tab_spacer"></div><div class="tab" ng-click="focusTab('design')" id="design"><span class='tab_name'>Design</span></div>
+                    <div class="tab_spacer"></div><div class="tab tab_back" ng-click="focusTab('consultation')" id="consultation"><span class='tab_name'>Consultation</span></div>
                     <div class="tab_spacer"></div><div class="tab tab_back" ng-click="focusTab('coach')" id="coach"><span class='tab_name'>Garden Coach</span></div>
-                    <div class="tab_spacer"></div><div class="tab tab_back tab_wide" ng-click="focusTab('maintenance')" id="maintenance"><span class='tab_name'>Garden Maintenance</span></div>
+                    <div class="tab_spacer"></div><div class="tab tab_back" ng-click="focusTab('spring')" id="spring"><span class='tab_name'>Spring Cleanup</span></div>
+                    <div class="tab_spacer"></div><div class="tab tab_back" ng-click="focusTab('maintenance')" id="maintenance"><span class='tab_name'>Maintenance</span></div>
                 </div>
                 &nbsp;<br />
                 <div class='tab_text' ng-show="gtab=='design'">
@@ -87,6 +90,17 @@
                         with an existing bin? Are you interested in vermicompost? Plants need 
                         to be moved or divided? You can tell me what's important to you and 
                         what you hope to gain or learn while working with a garden coach.
+                    </div>
+                </div>
+                <div class='tab_text' ng-show="gtab=='spring'">
+                    <dt>Spring Cleanup</dt>
+                    <div class="prehead">
+                        <ul>
+                            <li>Removal of accumulated debris from planting beds and 
+                                landscape areas</li>
+                            <li>Pruning of shrubs damaged during the winter</li>
+                            <li>Assessment of winter damage to plants and the need for replacement</li>
+                        </ul>
                     </div>
                 </div>
                 <div class='tab_text' ng-show="gtab=='maintenance'">

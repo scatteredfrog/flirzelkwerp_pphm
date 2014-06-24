@@ -1,14 +1,13 @@
 #judy > .tooltip {
     position: absolute;
     top: 155px !important;
-    left: -108!important;
+    left: -58!important;
     z-index: 3;
     display: none;
-    width: 320px;
+    width: 326px;
     background-color: moccasin;
     border-radius: 6px;
     padding-top: 7px;
-    padding-bottom: 7px;
     padding-left: 8px;
     padding-right: 8px;
     box-shadow: 3px 3px 5px 3px #ccc;
@@ -24,7 +23,6 @@
     background-color: coral;
     border-radius: 6px;
     padding-top: 7px;
-    padding-bottom: 7px;
     padding-left: 7px;
     padding-right: 7px;
     box-shadow: 3px 3px 5px 3px #ccc;
@@ -36,6 +34,7 @@
     font-weight: normal;
     width: 315px; 
     line-height: 19px;
+    margin-left: -34px;
 }
 
 #rich > .tooltip, #rich > .tooltip li {
@@ -44,4 +43,5 @@
     font-weight: normal;
     width: 352px; 
     line-height: 19px;
+    margin-left: -34px;
 }

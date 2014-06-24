@@ -1,0 +1,26 @@
+.sale {    font-family: "Franklin Gothic Medium", "Trebuchet MS"; }
+.salePix { padding-bottom: 25px; }
+.saleTitle {
+    font-size: 17px;
+    font-weight: bold;
+    padding-bottom: 5px;
+    padding-top: 10px;
+}
+
+.saleDescription {
+    font-size: 16px;
+    font-weight: normal;
+    padding-bottom: 12px;
+}
+
+.saleDivider {
+    border-bottom-width: 2px;
+    border-bottom-style: groove;
+    border-color: black;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+#galant {
+    height:220px;
+}
