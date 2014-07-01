@@ -4,8 +4,10 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <?php
         $error_exists   = false;
+//        $masterEmail    = "seancourtney@fab4it.com";
         $masterEmail    = "handyman4chicago@aol.com";
-         include "fabForm.php";
+        require 'PHPMailer-master/PHPMailerAutoload.php';
+        include "fabForm.php";
         $name           = $_POST['cName'];
         $neighborhood   = $_POST['cNeighborhood'];
         $areaCode       = $_POST['cAreaCode'];
@@ -16,20 +18,40 @@
         $additional     = $_POST['cAdditional'];
         $isValid        = $_POST['isValid'];
         $headers        = "MIME-Version: 1.0" . "\r\n";
-        $headers       .= "Content-type:text/html;charset=iso-8859-1" . "\r\n";
+        $headers       .= "Content-type:text/html;charset=iso-8859-1" . "\r<br />&nbsp;<br />";
         $subject        = strtoupper($neighborhood)." -- ".$topic;
-        $body           = "Name: ".$name."\n\n";
-        $body           = $body."Neighborhood: ".$neighborhood."\n\n";
-        $body           = $body."Phone number: (".$areaCode.") ".$phone."\n\n";
-        $body           = $body."E-mail address: ".$email."\n\n";
-        $body           = $body."Needs help with: ".$topic."\n\n";
-        
+        $body           = "Name: ".$name."<br />&nbsp;<br />";
+        $body           = $body."Neighborhood: ".$neighborhood."<br />&nbsp;<br />";
+        $body           = $body."Phone number: (".$areaCode.") ".$phone."<br />&nbsp;<br />";
+        $body           = $body."E-mail address: ".$email."<br />&nbsp;<br />";
+        $body           = $body."Needs help with: ".$topic."<br />&nbsp;<br />";
         if(!empty($additional))
             $body       = $body.$additional;
         
-        $body          .= "\n\nIP address: ".$_SERVER['REMOTE_ADDR']."\n";
-        $body          .= "Browser: ".$_SERVER['HTTP_USER_AGENT']."\n\n";
+        $body          .= "\n\nIP address: ".$_SERVER['REMOTE_ADDR']."<br />&nbsp;<br />";
+        $body          .= "Browser: ".$_SERVER['HTTP_USER_AGENT']."<br />&nbsp;<br />";
         
+        $mail = new PHPMailer();
+        $mail->addAddress($masterEmail);
+        $mail->setFrom($email,$from);
+        $mail->Subject = $subject;
+        $mail->msgHTML($body);
+        if (isset($_FILES['file_1'])) {
+            $mail->addAttachment($_FILES['file_1']['tmp_name'],$_FILES['file_1']['name']);
+        }
+
+        if (isset($_FILES['file_2'])) {
+            $mail->addAttachment($_FILES['file_2']['tmp_name'],$_FILES['file_2']['name']);
+        }
+        
+        if (isset($_FILES['file_3'])) {
+            $mail->addAttachment($_FILES['file_3']['tmp_name'],$_FILES['file_3']['name']);
+        }
+
+        if (isset($_FILES['file_4'])) {
+            $mail->addAttachment($_FILES['file_4']['tmp_name'],$_FILES['file_4']['name']);
+        }
+
         if (empty($name)) {
             $errors = "Please provide your name.<br />";
             $error_exists = true;
@@ -107,9 +129,13 @@ dl {  font-family: "Franklin Gothic Medium", "Trebuchet MS"; font-size: 12pt}
             echo "&nbsp;<br />";
             echo "<a href='contact.php'>Click here to try again.</a>";
         } else {
-            echo $f->sendMail($masterEmail);
+        if (!$mail->send()) {
+            echo "Mailer Error: " . $mail->ErrorInfo;
+        } else {
+            echo "Message sent!";
         }
-        ?>
+    }
+?>
             </td></tr>
 
           

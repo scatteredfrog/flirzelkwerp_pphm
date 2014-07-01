@@ -4,28 +4,24 @@
 function addHyphen() {
     var phLength=document.getElementById("cNumber").value.length;
     var addTo=document.getElementById("cNumber").value;
-    if (phLength==3)
-    {
-        addTo=addTo+"-";
+    if (phLength==3) {
+        addTo += "-";
         document.getElementById("cNumber").value=addTo;
     }
     return document.getElementById("cNumber").value;
 }
 
-function fabFormValidate()
-{
+function fabFormValidate() {
     // Did the user include a name?
     var userName=document.forms["contactRich"]["cName"].value;
-    if (userName=="" || userName==null)
-    {
+    if (userName=="" || userName==null) {
             alert("Please provide your name.");
             return false;
     }
     // Did the user include a phone number and area code?
     var phoneNumber=document.forms["contactRich"]["cNumber"].value;
     var areaCode=document.forms["contactRich"]["cAreaCode"].value;
-    if (phoneNumber=="" || phoneNumber==null || areaCode=="" || areaCode==null)
-    {
+    if (phoneNumber=="" || phoneNumber==null || areaCode=="" || areaCode==null) {
            alert("Please include your phone number with the area code.");
            return false;
     }
@@ -92,7 +88,7 @@ function fabFormValidate()
         </td>
         <td valign="top"><img src="images/cartoon.gif" width="140" height="166"></td></tr>
                 <!-- END TABLE ON RIGHT--><!-- BEGIN FORM -- BEGIN FORM -- BEGIN FORM -- BEGIN FORM -- BEGIN FORM -- BEGIN FORM -->
-<form name="contactRich" id="contactRich" method="post" action="fabFormHandler.php" onsubmit="return fabFormValidate()">
+<form name="contactRich" id="contactRich" method="post" action="fabFormHandler.php" enctype="multipart/form-data" onsubmit="return fabFormValidate()">
     <table cellpadding="6">
         <tr>
             <td colspan="2"><h3>Contact</h3></td>
@@ -102,11 +98,11 @@ function fabFormValidate()
             <td><input type="text" name="cName" size="31"></td>
         </tr>
         <tr>
-            <td class="form">Neighborhood or closest major intersection:</td>
+            <td class="form">Your address:<br /><span class="footer">(or nearest intersection)</span></td>
             <td><input type="text" name="cNeighborhood" size="31"></td>
         </tr>
         <tr>
-            <td class="form">Your phone number:<br><span class="footer">(Include area code)</span></td>
+            <td class="form">Your phone number:<br /><span class="footer">(Include area code)</span></td>
             <td>(<input type="text" size="3" maxlength="3" name="cAreaCode"/>) <input type="text" id="cNumber" name="cNumber" size="23" onkeyup="addHyphen()"></td>
         </tr>
         <tr>
@@ -132,6 +128,15 @@ function fabFormValidate()
         <tr>
             <td class="form">Any additional details?</td>
             <td><textarea name="cAdditional" cols="27" rows="4" wrap="soft"></textarea></td>
+        </tr>
+        <tr>
+            <td class="form">You may include up to<br />four pictures:</td>
+            <td>
+                <input type="file" name="file_1" id="file_1" /><br />
+                <input type="file" name="file_2" id="file_2" /><br />
+                <input type="file" name="file_3" id="file_3" /><br />
+                <input type="file" name="file_4" id="file_4" /><br />
+            </td>
         </tr>
         <tr>
             <td></td>
