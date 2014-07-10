@@ -8,10 +8,10 @@
 <link rel="stylesheet" type="text/css" href="rich.css">
 <link rel="stylesheet" type="text/css" href="css/garden_services.css">
 </head>
+<body bgcolor="#CCCCCC" ng-app='Gardening'>
 <script src="js/jquery-1.8.0.min.js"></script>
 <script src="js/angular.min.js"></script>
 <script src="js/angular/GardenCtrl.js"></script>
-<body bgcolor="#CCCCCC" ng-app='Gardening'>
  
 <p>&nbsp;</p>
 <table width="800" border="0" cellspacing="2" cellpadding="2" align="center" bgcolor="#FFFFFF">
@@ -40,7 +40,8 @@
                     Would you like to enhance your curb appeal, the enjoyment of your garden, and 
                     increasing your property value? It's the &num;2 home improvement that pays off. 
                     Let Gardens by Portage Park Services help. We offer a variety of services for 
-                    you to choose from. Give us a call today.
+                    you to choose from. Give us a call today. <a href="garden-photos.php">You can 
+                        this link to see examples of our work.</a>
                 </div>
                 <br />
                 <div id="tab_container">

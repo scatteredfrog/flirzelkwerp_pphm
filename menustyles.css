@@ -2,8 +2,7 @@
 	font: normal Arial, Sans-Serif, Helvetica;
 }
 
-.level1
-{
+ul.level1{
     display: block;
     margin: 0;
     padding: 0;
@@ -17,7 +16,7 @@ li.folder {
 	border: 0;
 }
 
-.level1{
+ul.level1{
 	width: 191px;
 	list-style-type: disc; 
 }
@@ -43,10 +42,10 @@ li.folder {
 	font: normal 14px Arial, Sans-Serif, Helvetica;
         display: block;
         font-style: italic;
-	background-color: #FFF;
+/*	background-color: #FFF;*/
 }	
 
-#menu li.folder:hover {
+#menu #sidenav li.folder:hover {
 	z-index: 10;
 	background-color: #EFEFEF;
 }
@@ -57,12 +56,12 @@ li.folder {
 	left: 190px;
 	top: 5px;
 }
-				
+
 #menu #sidenav li.folder>ul { 
 	left: 190px;
 }
 		
-ul.level1 li.folder:hover ul.level2 {
+#menu #sidenav li.folder:hover ul.level2 {
 	display: block;
 	width: 150px;
 }
@@ -74,20 +73,21 @@ a {
 }
 
 #menu #sidenav li>a { 
-	width: auto;
+	width: 139px;
 }
 
 #menu #sidenav li a.submenu {
 	background-color: #D6D6D6;
         position: relative;
-        top: -25px;
+        top: -5px;
 	padding-left: 10px;
-	font: normal 13px Arial, Sans-Serif, Helvetica;
+	font: normal 14px Arial, Sans-Serif, Helvetica;
         font-style: italic;
 	display: block;
 	border-bottom: 1px solid #FFF;
-	padding-top: 3px;
-	padding-bottom: 4px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+        left: -38px;
 }
 			
 
