@@ -43,31 +43,6 @@
                     that have gotten upgraded from, or are duplicates.</div>
                 <br />&nbsp;<br />
                 <div class="subSection">Tools For Sale</div>
-                <div class="sale saleTitle">One pair of seldom-used folding metal saw horses - $25</div>
-                <div class="sale saleDescription">
-                    These good quality saw horses have a sacrificial 2 x 4 screwed to the 
-                    top to extend the height and allow a circular saw to pass through 
-                    without dulling the blade.<br />
-                    Has eyelets to hang from the joist when not in use.<br />
-                    One leg has a magnet to prevent the legs from unfolding when not desired.<br />
-                    
-                </div>
-                <div class='zoom salePix' id='sawhorse_1'>
-                    <img src='images/sawhorse1.jpg' width='432' height='324' />
-                </div>
-                <div class='zoom salePix' id='sawhorse_2'>
-                    <img src='images/sawhorse2.jpg' width='432' height='324' />
-                </div>
-                <div class="saleDivider"></div>
-                <div class="sale saleTitle">IKEA Corner Desk -- $99.95 OBO</div>
-                <div class="sale saleDescription" style="position:relative; z-index:200;">
-                    This part of my office system didn't fit into my new reconfiguration.
-                        This four-legged Galant desk is in excellent condition.
-                </div>
-                <div class='zoom' id='galant' style="position:relative; z-index:100;">
-                    <img src='images/galant.jpg' width='432' style="position:relative; top:-55px;"/>
-                </div>
-                <div class="saleDivider" style="position:relative; z-index:500;"></div>
                 <div class="sale saleTitle">Vintage Leather Shop collection (stamps, tools, and hides) from the '70s</div>
                 <div class="sale saleDescription">
                     <p>Everything you'd need, including the hides and tutorials, to start and run 
@@ -93,7 +68,7 @@
                        vintage character!"</p>
                     <p>So, the leather workshop is for sale.</p>
                     <p>Most of the items are still available at 
-                        <a href="http://www.tandyleatherfactory.com" target="_new">Tandy Leather</a>. 
+                        <a href="http://www.tandyleatherfactory.com" target="_blank">Tandy Leather</a>. 
                         The following categories at Tandy have many items that are in my collection:
                     <ul>
                         <li>Lacing</li>
