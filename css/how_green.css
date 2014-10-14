@@ -1,0 +1,61 @@
+#tab_container {
+    width: 615px;
+    background-color: white;
+    height:34px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-color: #BDBDBD;
+}
+
+.tab {
+    position: relative;
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-color: #BDBDBD;
+    height: 34px;
+    text-align: center;
+    background-color: white;
+    cursor: pointer;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select:none;
+    user-select:none;
+}
+
+.tab_spacer {
+    position: relative;
+    padding-left: 1px;
+    float: left;
+    border-style: solid;
+    border-color: white;
+}
+
+.tab_back {
+    background-color: #DEDEDE;
+    border-color: #DEDEDE;
+}
+
+.tab_wide {
+    width: 160px;
+}
+
+.tab_name {
+    position:relative;
+    top: 7px;
+    font-family: "Trebuchet MS";
+    font-style: italic;
+    font-size: 17px;
+}
+
+.greenDiv { padding: 12px 0 12px 0; }
+.greenPrehead { padding-bottom: 11px; }
+.imageContainer { border-radius: 12px; height: 480px; width: 640px; margin-bottom: 6px; }
