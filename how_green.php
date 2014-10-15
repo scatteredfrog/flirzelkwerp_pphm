@@ -85,6 +85,20 @@
                         Any leftover metal is left for the scrappers to collect and use.
                     </div>
                 </div>
+                <div class='greenDiv'>
+                    <dt class="greenPrehead">Don't Litter With Cat Litter!</dt>
+                    <div class="imageVertContainer" style="background-image: url(images/how_green/tc_container.jpg);" >
+                    </div>
+                    <div class="prehead">
+                        Just about everybody has a friend with a cat. If this is you -- or if 
+                        <span style='font-style: italic;'>you</span> have a cat -- you can repurpose 
+                        a cat litter container. This one now stores rock salt on our porch, and 
+                        we used artwork to cover the container's original verbiage.<br />
+                        &nbsp;<br />
+                        These containers can also be used to hold grass seed, play sand, or 
+                        indoor plants, among other things.
+                    </div>
+                </div>
               </td></tr>
 
           
