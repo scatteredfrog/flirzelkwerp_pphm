@@ -93,7 +93,7 @@
                         Just about everybody has a friend with a cat. If this is you -- or if 
                         <span style='font-style: italic;'>you</span> have a cat -- you can repurpose 
                         a cat litter container. This one now stores rock salt on our porch, and 
-                        we used artwork to cover the container's original verbiage.<br />
+                        we used an artwork sticker (available for $6) to cover the container's original verbiage.<br />
                         &nbsp;<br />
                         These containers can also be used to hold grass seed, play sand, or 
                         indoor plants, among other things.
