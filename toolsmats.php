@@ -1,22 +1,25 @@
 <html><!-- #BeginTemplate "/Templates/template0.dwt" -->
 <head>    
 <!-- #BeginEditable "doctitle" --> 
-<title>Portage Park Handyman - Services</title>
+<title>Portage Park Handyman - Tools and Materials For Sale</title>
 <!-- #EndEditable --> 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <meta name="keywords" content="Handyman Chicago Portage Park Repair Remodeling Home Repair Improvement Richard Escallier">
 <link rel="stylesheet" type="text/css" href="rich.css">
 <link rel="stylesheet" type="text/css" href="css/toolsmats.css">
+<link rel="stylesheet" type="text/css" href="css/fotorama.css">
 <script src='js/jquery-1.8.0.min.js'></script>
-<script src='js/jquery.zoom.min.js'></script>
+<script src='js/fotorama.js'></script>
+<script src="js/angular.min.js"></script>
+<script src="js/angular/ToolsMatsCtrl.js"></script>
 </head>
 
-<body bgcolor="#CCCCCC">
+<body bgcolor="#CCCCCC" ng-app="ToolsMats">
  
 <p>&nbsp;</p>
 <table width="800" border="0" cellspacing="2" cellpadding="2" align="center" bgcolor="#FFFFFF">
 <!--BEGINNING OF BODY-->
-<table align="center" bgcolor="#FFFFFF">
+<table align="center" bgcolor="#FFFFFF" ng-controller="ToolsMatsCtrl">
     <tr>
         <td valign="top"><table width="192"> <!-- BEGIN LINK TABLE W/LOGO -->
         <td><img src="images/logo_trans_r1_c1.gif"></img><br />
@@ -42,50 +45,99 @@
                     or garage workbench. So the following pictures are of quality tools 
                     that have gotten upgraded from, or are duplicates.</div>
                 <br />&nbsp;<br />
-                <div class="subSection">Tools For Sale</div>
-                <div class="sale saleTitle">Vintage Leather Shop collection (stamps, tools, and hides) from the '70s</div>
-                <div class="sale saleDescription">
-                    <p>Everything you'd need, including the hides and tutorials, to start and run 
-                        a custom leather shop!</p>
-                    <p>One of the college dorms ran leather workshops next to the ceramics studio. 
-                       I picked up the craft and made a living selling belts, purses, hats, 
-                       wristbands, and a few garments. The money was in making and selling belts and 
-                       wristbands with a name. Carving purses and bags was the artistic side, but 
-                       the time required for the detail that makes a fine bag didn't pay the rent.
-                       Cash in the pocket didn't last long in those days, but Tandy Leather was 
-                       located between work (Village Cab Company in Oak Park) and home. I'd buy a 
-                       leather stamp or carving guide that I didn't have so that someday I may 
-                       create thousands of quality leather items. Turning a hobby into a business 
-                       was not the end of the rainbow; the real job(s) lasted decades. The hobby 
-                       came back every holiday season as special-order named belts and wristbands 
-                       meant very good cheer for both customers and myself for decades.  In the 
-                       '90s the new hobby became home repair, and those tools and materials 
-                       squeezed the leather shop into boxes. I'd pull things out occasionally to 
-                       rivet a carpenter's tool pouch or add a hole in a belt (too much of the  
-                       latter going on). Then one day I went by and thought I heard the tools 
-                       calling me.  When I opened the box they said, "Help! We're trapped in here 
-                       and want to be used! Find us someone who will appreciate our quality and 
-                       vintage character!"</p>
-                    <p>So, the leather workshop is for sale.</p>
-                    <p>Most of the items are still available at 
-                        <a href="http://www.tandyleatherfactory.com" target="_blank">Tandy Leather</a>. 
-                        The following categories at Tandy have many items that are in my collection:
-                    <ul>
-                        <li>Lacing</li>
-                        <li>Leather</li>
-                        <li>Leathercraft Books</li>
-                        <li>Leathercraft Patterns</li>
-                        <li>Leathercraft Projects</li>
-                        <li>Hardware</li>
-                        <li>Stamps</li>
-                        <li>Tools</li>
-                    </ul>
-                    </p>
-                    <p>More than half of the stamps, tools, or craftaids, as well as DIY tutorials that 
-                        worked as a '70s version of YouTube are here waiting for the next leather 
-                        craftsman.
-                    </p>
-                    <p>Retail value of this collection is in the $6k - $7k range.</p>
+                <div class="subSection">Tools and Materials For Sale</div>
+                <div ng-click="arrowClick('litter')" id="litter" class="sale saleTitle"><span id="litter-span" class="saleTriangle"></span>
+                    Escape From the Landfill: Cat Litter Containers
+                </div>
+                <div id="litter-stuff" class="saleOtherStuff">
+                    <div class="fotorama">
+                        <img src="/images/sale/tcat1.jpg" />
+                        <img src="/images/sale/tcat2.jpg" />
+                        <img src="/images/sale/tcat3.jpg" />
+                    </div>
+                    <div class="sale saleDescription">
+                        Keeping in mind <a href="how_green.php">the importance of being
+                        green</a>, I have repurposed cat litter buckets that can be
+                        used for storing rock salt, play sand, indoor plants, or anything 
+                        else you need to store for easy access. These containers have 
+                        nice artwork stickers (sold separately for $6 each) to cover the 
+                        original cat litter verbiage and provide a more pleasing design.<br />
+                        Price: $8.00.
+                    </div>
+                </div>
+                
+                <div ng-click="arrowClick('covers')" id="covers" class="sale saleTitle"><span id="covers-span" class="saleTriangle"></span>
+                    Half Round Window Covers
+                </div>
+                <div class="saleOtherStuff" id="covers-stuff">
+                    <div class="fotorama">
+                        <img src="/images/sale/hround1.jpg" />
+                        <img src="/images/sale/hround2.jpg" />
+                        <img src="/images/sale/hround3.jpg" />
+                    </div>
+                    <div class="sale saleDescription">
+                        These covers for half round windows are temporary and removable. 
+                        Having them custom-made and installed would cost hundreds of dollars 
+                        each. Our much more affordable options are made using temporary vinyl 
+                        window coverings from the box stores and have been in use for at least 
+                        four years. These window covers reduce middle-of-summer heat gain but 
+                        do not block out all the light. When winter comes or if you want to 
+                        let in evening light during warmer times of year, the covers are easy to 
+                        remove.<br />
+                        Price: $49 each<br />
+                        $125 to measure, deliver, and install.<br />
+                        Windows pictured are 38 inches in diameter (19 inches tall). When closed, 
+                        the covering sits on the sill and is 1.5 inches by 1.5 inches by 18.5 
+                        inches.
+                    </div>
+                </div>
+
+                <div class="sale saleTitle" id="leather" ng-click="arrowClick('leather')"><span id="leather-span" class="saleTriangle"></span>
+                    Vintage Leather Shop collection from the '70s</div>
+                <div id="leather-stuff" class="saleOtherStuff">
+                    <div class="sale saleDescription">
+                        <p>Everything you'd need, including the hides and tutorials, to start and run 
+                            a custom leather shop!</p>
+                        <p>One of the college dorms ran leather workshops next to the ceramics studio. 
+                           I picked up the craft and made a living selling belts, purses, hats, 
+                           wristbands, and a few garments. The money was in making and selling belts and 
+                           wristbands with a name. Carving purses and bags was the artistic side, but 
+                           the time required for the detail that makes a fine bag didn't pay the rent.
+                           Cash in the pocket didn't last long in those days, but Tandy Leather was 
+                           located between work (Village Cab Company in Oak Park) and home. I'd buy a 
+                           leather stamp or carving guide that I didn't have so that someday I may 
+                           create thousands of quality leather items. Turning a hobby into a business 
+                           was not the end of the rainbow; the real job(s) lasted decades. The hobby 
+                           came back every holiday season as special-order named belts and wristbands 
+                           meant very good cheer for both customers and myself for decades.  In the 
+                           '90s the new hobby became home repair, and those tools and materials 
+                           squeezed the leather shop into boxes. I'd pull things out occasionally to 
+                           rivet a carpenter's tool pouch or add a hole in a belt (too much of the  
+                           latter going on). Then one day I went by and thought I heard the tools 
+                           calling me.  When I opened the box they said, "Help! We're trapped in here 
+                           and want to be used! Find us someone who will appreciate our quality and 
+                           vintage character!"</p>
+                        <p>So, the leather workshop is for sale.</p>
+                        <p>Most of the items are still available at 
+                            <a href="http://www.tandyleatherfactory.com" target="_blank">Tandy Leather</a>. 
+                            The following categories at Tandy have many items that are in my collection:
+                        <ul>
+                            <li>Lacing</li>
+                            <li>Leather</li>
+                            <li>Leathercraft Books</li>
+                            <li>Leathercraft Patterns</li>
+                            <li>Leathercraft Projects</li>
+                            <li>Hardware</li>
+                            <li>Stamps</li>
+                            <li>Tools</li>
+                        </ul>
+                        </p>
+                        <p>More than half of the stamps, tools, or craftaids, as well as DIY tutorials that 
+                            worked as a '70s version of YouTube are here waiting for the next leather 
+                            craftsman.
+                        </p>
+                        <p>Retail value of this collection is in the $6k - $7k range.</p>
+                    </div>
                 </div>
               </td></tr>
 
@@ -98,17 +150,6 @@
 
 </table>
 
-<script>
-    $(document).ready(function() {
-        $('#sawhorse_1').zoom({
-            url: 'images/sawhorse1.jpg'
-        });
-        
-        $('#sawhorse_2').zoom({
-            url: 'images/sawhorse2.jpg'
-        });
-    });
-</script>
 </body>
 </html>
 

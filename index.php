@@ -48,7 +48,7 @@
                         <span style="font-size:14px;">Emergency after-hours/weekend service for established customers when possible</span>
                     </div></p>
             <p>
-                <span id="how_green">How Green Is Your Handyman?</span>
+                <a href="how_green.php"><span id="how_green">How Green Is Your Handyman?</span></a>
             </p>
         </td>
 <!--        <td valign="top" align="right" width="140"></td></tr>-->

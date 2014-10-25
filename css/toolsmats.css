@@ -1,10 +1,44 @@
 .sale {    font-family: "Franklin Gothic Medium", "Trebuchet MS"; }
 .salePix { padding-bottom: 25px; }
+
 .saleTitle {
     font-size: 17px;
     font-weight: bold;
     padding-bottom: 5px;
     padding-top: 10px;
+    background-color: #000;
+    color: #fff;
+    margin-bottom: 7px;
+}
+
+.saleTriangle {
+    width: 0; 
+    height: 0; 
+    border-bottom: 8px solid transparent;  /* left arrow slant */
+    border-top: 8px solid transparent; /* right arrow slant */
+    border-left: 12px solid #fff; /* bottom, add background color here */
+    font-size: 0;
+    line-height: 0;
+    margin-left: 8px;
+    margin-right: 12px;
+    position: relative;
+    top: -8px;
+    cursor: pointer;
+}
+
+.saleTriangleDown {
+	width: 0; 
+	height: 0; 
+	border-top: 12px solid #fff;  /* left arrow slant */
+	border-right: 8px solid transparent; /* right arrow slant */
+	border-left: 8px solid transparent; /* bottom, add background color here */
+	font-size: 0;
+	line-height: 0;
+        margin-left: 6px;
+        margin-right: 10px;
+        position: relative;
+        top: -2px;
+        cursor: pointer;
 }
 
 .saleDescription {
@@ -21,6 +55,5 @@
     padding-bottom: 12px;
 }
 
-#galant {
-    height:220px;
-}
+#galant { height:220px; }
+.saleOtherStuff { display: none; }
