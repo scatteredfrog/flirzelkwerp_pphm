@@ -58,5 +58,5 @@
 
 .greenDiv { padding: 12px 0 12px 0; }
 .greenPrehead { padding-bottom: 11px; }
-.imageContainer { border-radius: 12px; height: 480px; width: 640px; margin-bottom: 6px; }
-.imageVertContainer { border-radius: 12px; height: 640px; width: 480px; margin-bottom: 6px; }
+.imageContainer { border-radius: 12px; height:375px; width:500px; margin-bottom: 6px; }
+.imageVertContainer { border-radius: 12px; height:500px; width:375px; margin-bottom: 6px; }

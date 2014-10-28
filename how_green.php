@@ -40,7 +40,7 @@
                 <br />
                 <div class='greenDiv'>
                     <dt class="greenPrehead">Too Much Cement? No Such Thing!</dt>
-                    <div class="imageContainer" style="background-image: url(images/how_green/repaired_stairs.jpg);" >
+                    <div class="imageContainer" style="background-image: url(images/how_green/repaired_stairs_d.jpg);" >
                     </div>
                     <div class="prehead">
                         While doing a minor cement repair, I had mixed a full bag of cement when 
@@ -52,7 +52,7 @@
                     </div>
                 </div>
                 <div class="greenDiv">
-                    <div class="imageContainer" style="background-image:url(images/how_green/alley_pothole.jpg);">
+                    <div class="imageContainer" style="background-image:url(images/how_green/alley_pothole_d.jpg);">
                     </div>
                     <div class="prehead">
                         After the brutal winter of 2013-2014, I didn't 
@@ -62,7 +62,7 @@
                 </div>
                 <div class='greenDiv'>
                     <dt class="greenPrehead">Staying Sharp</dt>
-                    <div class="imageContainer" style="background-image: url(images/how_green/carpenter_pencil.jpg);" >
+                    <div class="imageContainer" style="background-image: url(images/how_green/carpenter_pencil_d.jpg);" >
                     </div>
                     <div class="prehead">
                         When I sharpen my carpenter's pencil, I do so over the compost 
@@ -87,7 +87,7 @@
                 </div>
                 <div class='greenDiv'>
                     <dt class="greenPrehead">Don't Litter With Cat Litter!</dt>
-                    <div class="imageVertContainer" style="background-image: url(images/how_green/tc_container.jpg);" >
+                    <div class="imageVertContainer" style="background-image: url(images/how_green/tc_container_d.jpg);" >
                     </div>
                     <div class="prehead">
                         Just about everybody has a friend with a cat. If this is you -- or if 
