@@ -6,6 +6,7 @@
     font-weight: bold;
     padding-bottom: 5px;
     padding-top: 10px;
+    padding-left: 10px;
     background-color: #000;
     color: #fff;
     margin-bottom: 7px;
@@ -56,4 +57,9 @@
 }
 
 #galant { height:220px; }
-.saleOtherStuff { display: none; }
+#litter-pix,#covers-pix { display: none; }
+.clickToSee {
+    font-style: italic;
+    color: #0000ff;
+    cursor: pointer;
+}

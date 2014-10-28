@@ -46,15 +46,10 @@
                     that have gotten upgraded from, or are duplicates.</div>
                 <br />&nbsp;<br />
                 <div class="subSection">Tools and Materials For Sale</div>
-                <div ng-click="arrowClick('litter')" id="litter" class="sale saleTitle"><span id="litter-span" class="saleTriangle"></span>
+                <div id="litter" class="sale saleTitle">
                     Escape From the Landfill: Cat Litter Containers
                 </div>
-                <div id="litter-stuff" class="saleOtherStuff">
-                    <div class="fotorama">
-                        <img src="/images/sale/tcat1.jpg" />
-                        <img src="/images/sale/tcat2.jpg" />
-                        <img src="/images/sale/tcat3.jpg" />
-                    </div>
+                <div class="saleOtherStuff">
                     <div class="sale saleDescription">
                         Keeping in mind <a href="how_green.php">the importance of being
                         green</a>, I have repurposed cat litter buckets that can be
@@ -62,19 +57,21 @@
                         else you need to store for easy access. These containers have 
                         nice artwork stickers (sold separately for $6 each) to cover the 
                         original cat litter verbiage and provide a more pleasing design.<br />
-                        Price: $8.00.
+                        Price: $8.00.<br />
+                        <span ng-click="arrowClick('litter')" id="litter-see" class="clickToSee">Click here to see pictures.</span>
                     </div>
+                    <div ng-show="id=='litter'" id="litter-pix" class="fotorama">
+                        <img src="/images/sale/tcat1.jpg" />
+                        <img src="/images/sale/tcat2.jpg" />
+                        <img src="/images/sale/tcat3.jpg" />
+                    </div>
+                    &nbsp;<br />
                 </div>
                 
-                <div ng-click="arrowClick('covers')" id="covers" class="sale saleTitle"><span id="covers-span" class="saleTriangle"></span>
+                <div id="covers" class="sale saleTitle">
                     Half Round Window Covers
                 </div>
                 <div class="saleOtherStuff" id="covers-stuff">
-                    <div class="fotorama">
-                        <img src="/images/sale/hround1.jpg" />
-                        <img src="/images/sale/hround2.jpg" />
-                        <img src="/images/sale/hround3.jpg" />
-                    </div>
                     <div class="sale saleDescription">
                         These covers for half round windows are temporary and removable. 
                         Having them custom-made and installed would cost hundreds of dollars 
@@ -88,11 +85,18 @@
                         $125 to measure, deliver, and install.<br />
                         Windows pictured are 38 inches in diameter (19 inches tall). When closed, 
                         the covering sits on the sill and is 1.5 inches by 1.5 inches by 18.5 
-                        inches.
+                        inches.<br />
+                        <span ng-click="arrowClick('covers')" id="covers-see" class="clickToSee">Click here to see pictures.</span>
                     </div>
+                    <div id="covers-pix" class="fotorama">
+                        <img src="/images/sale/hround1.jpg" />
+                        <img src="/images/sale/hround2.jpg" />
+                        <img src="/images/sale/hround3.jpg" />
+                    </div>
+                    &nbsp;<br />
                 </div>
 
-                <div class="sale saleTitle" id="leather" ng-click="arrowClick('leather')"><span id="leather-span" class="saleTriangle"></span>
+                <div class="sale saleTitle" id="leather">
                     Vintage Leather Shop collection from the '70s</div>
                 <div id="leather-stuff" class="saleOtherStuff">
                     <div class="sale saleDescription">

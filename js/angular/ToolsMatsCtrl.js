@@ -4,18 +4,14 @@ app.controller('ToolsMatsCtrl', function($scope) {
     
     $scope.arrowClick = function(id) {
         $scope.id = id;
-        if (angular.element('#'+id+"-span").hasClass('saleTriangle')) {
-            angular.element('#'+id+"-span").removeClass('saleTriangle');
-            angular.element('#'+id+"-span").addClass('saleTriangleDown');
-            angular.element('#'+id+"-stuff").show();
-            if ($scope.id == 'litter' || $scope.id == 'covers') {
-                window.scrollBy(0,500);
-            }
+        if (angular.element('#'+id+'-pix').css('display') === 'none') {
+            angular.element('#'+id+"-pix").css('display','block');
+            angular.element('#'+id+"-see").html('Click here to hide pictures.');
         } else {
-            angular.element('#'+id+"-span").removeClass('saleTriangleDown');
-            angular.element('#'+id+"-span").addClass('saleTriangle');
-            angular.element('#'+id+"-stuff").hide();
+            angular.element('#'+id+"-pix").css('display','none');
+            angular.element('#'+id+"-see").html('Click here to see pictures.');
         }
+        
     };
     
 });
