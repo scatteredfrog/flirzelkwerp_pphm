@@ -1,0 +1,17 @@
+.wormNumber { position: relative; float: right; }
+.wormNumber input { width: 44px;}
+.wormRow { position: relative; clear: both;}
+#state { width: 25px; }
+#zip { width: 56px; }
+#town { width: 138px; }
+#street { margin-bottom: 10px; }
+.name { width: 113px; }
+
+.wormProduct { 
+    position: relative;
+    float: left; 
+    padding: 5px; 
+    font-family: "Franklin Gothic Medium","Trebuchet MS";
+    font-size: 11pt;
+    width: 252px;
+}
