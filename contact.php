@@ -78,7 +78,7 @@ function fabFormValidate() {
     <tr>
         <td valign="top"><table width="192"> <!-- BEGIN LINK TABLE W/LOGO -->
         <td><img src="images/logo_trans_r1_c1.gif"></img><br />
-        <? include "links.html"; ?>
+        <?php include "links.html"; ?>
         </td></table><!-- END LINK TABLE W/LOGO -->
             <td valign="top"><table width="608" height="118"> <!-- BEGIN TABLE ON RIGHT-->
         <td valign="middle">

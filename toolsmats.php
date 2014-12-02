@@ -80,6 +80,32 @@
                     &nbsp;<br />
                 </div>
                 
+                <div id="worm-fact" class="sale saleTitle">
+                    Worm Factory 360 Composting Worm Bin
+                </div>
+                <div class="saleOtherStuff">
+                    <div class="sale saleDescription">
+                        The Worm Factory 360 composter uses worms to break down organic 
+                        waste. Its compact design makes it perfect to use in any 
+                        household.<br />
+                        It is easy to recycle kitchen scraps and paper into nutrient-rich 
+                        fertilizer for your plants.<br />
+                        Managing the Worm Factory 360 takes less than 15 minutes a week. 
+                        Add worms and your organic waste to the bottom tray. Once that tray 
+                        is filled add another. The worms migrate upward leaving their 
+                        compost behind. It works year-round inside or outside.<br />
+                        The finished compost can be used on any plants.<br />
+                        Price: (contact us)<br />
+                        <span ng-click="arrowClick('worm-fact')" id="worm-fact-see" class="clickToSee">Click here to see pictures.</span>
+                    </div>
+                    <div ng-show="id=='worm-fact'" id="worm-fact-pix" class="fotorama">
+                        <img src="/images/sale/tcat1.jpg" />
+                        <img src="/images/sale/tcat2.jpg" />
+                        <img src="/images/sale/tcat3.jpg" />
+                    </div>
+                    &nbsp;<br />
+                </div>
+                
                 <div id="covers" class="sale saleTitle">
                     Half Round Window Covers
                 </div>
