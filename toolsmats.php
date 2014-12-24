@@ -61,7 +61,7 @@
                         is filled add another. The worms migrate upward leaving their 
                         compost behind. It works year-round inside or outside.<br />
                         The finished compost can be used on any plants.<br />
-                        Price: (contact us)<br />
+                        To see the available products or to order, <a href="worm_order.php">please click here</a>.<br />
                         <span ng-click="arrowClick('worm-fact')" id="worm-fact-see" class="clickToSee">Click here to see pictures.</span>
                     </div>
                     <div ng-show="id=='worm-fact'" id="worm-fact-pix" class="fotorama">
