@@ -37,7 +37,7 @@ class tip
 //        mysql_query("INSERT INTO whatilearned (isNew,tip,date) VALUES ('1','$formTip',CURDATE())");
     }
     
-    public function __destruct()
+//    public function __destruct()
 //    {
 //    mysql_close();
 //    }

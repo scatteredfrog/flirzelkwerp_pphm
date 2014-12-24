@@ -1,17 +1,39 @@
-.wormNumber { position: relative; float: right; }
-.wormNumber input { width: 44px;}
-.wormRow { position: relative; clear: both;}
-#state { width: 25px; }
+.wormNumber { position: relative; float: left; font-size: 11pt; font-family: "Franklin Gothic Medium","Trebuchet MS"; }
+.wormPrice { padding: 5px; position: relative; float: left; font-size: 11pt; font-family: "Franklin Gothic Medium","Trebuchet MS"; width: 51px; }
+.wormNumber input { width: 44px; position: relative; top: 2px; left: 13px;}
+
+.wormSubtotal { 
+    padding: 5px;
+    position: relative; 
+    float: left; 
+    font-size: 11pt; 
+    font-family: "Franklin Gothic Medium","Trebuchet MS"; 
+    left: 10px;
+}
+
+#total_span { position: relative; left: 25px; font-family: "Franklin Gothic Medium", "Trebuchet MS"; }
+.wormRow { position: relative; clear: both; height: 27px;}
+#state { width: 25px; text-transform: uppercase; }
 #zip { width: 56px; }
 #town { width: 138px; }
 #street { margin-bottom: 10px; }
 .name { width: 113px; }
-
+#form_width { width: 550px; }
 .wormProduct { 
     position: relative;
     float: left; 
     padding: 5px; 
     font-family: "Franklin Gothic Medium","Trebuchet MS";
     font-size: 11pt;
-    width: 252px;
+    width: 319px;
+}
+
+.form { width: 250px; }
+.wormBold { font-weight: bold; padding:5px; }
+.wormStripe { background-color: #e0e0e0; }
+.wormSubtotalAmount { left: 35px; }
+
+#worm_form {
+    height: 300px;
+    overflow-y: auto;
 }

@@ -1,64 +1,9 @@
+<?php     session_start(); ?>
+
 <html><!-- #BeginTemplate "/Templates/template0.dwt" -->
 <head>
-<script language="Javascript">
-function addHyphen() {
-    var phLength=document.getElementById("cNumber").value.length;
-    var addTo=document.getElementById("cNumber").value;
-    if (phLength==3) {
-        addTo += "-";
-        document.getElementById("cNumber").value=addTo;
-    }
-    return document.getElementById("cNumber").value;
-}
-
-function fabFormValidate() {
-    // Did the user include a name?
-    var userName=document.forms["contactRich"]["cName"].value;
-    if (userName=="" || userName==null) {
-            alert("Please provide your name.");
-            return false;
-    }
-    // Did the user include a phone number and area code?
-    var phoneNumber=document.forms["contactRich"]["cNumber"].value;
-    var areaCode=document.forms["contactRich"]["cAreaCode"].value;
-    if (phoneNumber=="" || phoneNumber==null || areaCode=="" || areaCode==null) {
-           alert("Please include your phone number with the area code.");
-           return false;
-    }
-    
-    // Did the user provide a valid e-mail address?
-    var emailAddress=document.forms["contactRich"]["cEmail"].value;
-    var atCount=emailAddress.split("@").length-1;
-    var lastAt=emailAddress.lastIndexOf("@");
-    var isDot=emailAddress.lastIndexOf(".");
-    var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-    if (!filter.test(emailAddress) || emailAddress=="" || emailAddress==null || emailAddress.length<5 || lastAt <0 || isDot<0 || isDot<lastAt || atCount!=1)
-    {
-        alert("Please provide a valid e-mail address.");
-        return false;
-    }
-    
-    // Did the user provide a neighborhood?
-    var hood=document.forms["contactRich"]["cNeighborhood"].value;
-    if (hood=="" || hood==null)
-        {
-            alert("Please provide your neighborhood or nearest major intersection.");
-            return false;
-        }
-        
-    // Did the user select a service?
-    if (document.forms["contactRich"]["cTopic"].value=="null")
-        {
-            alert("Please tell us what you need help with.");
-            return false;
-        }
-    
-    document.getElementById("isValid").value="yes";
-    return true;
-}
-</script> 
 <!-- #BeginEditable "doctitle" --> 
-<title>Portage Park Handyman - Contact Rich</title>
+<title>Portage Park Handyman - Order Worm Bins</title>
 <!-- #EndEditable --> 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <meta name="keywords" content="Handyman Chicago Portage Park Repair Remodeling Home Repair Improvement Richard Escallier">
@@ -69,10 +14,21 @@ function fabFormValidate() {
 </style>
     <link rel="stylesheet" type="text/css" href="rich.css">
     <link rel="stylesheet" type="text/css" href="css/worm_order.css">
+    <script src="js/jquery-1.8.0.min.js"></script>
+    <script src="js/jquery.maskedinput-1.2.2.js"></script>
+    <script src="js/worm_order.js"></script> 
 </head>
 
 <body bgcolor="#CCCCCC">
- 
+<?php
+    $link=mysql_connect("db401201757.db.1and1.com", "dbo401201757", "pphmdb42");
+    if(!$link) {
+      die('Count not connect: '.mysql_error());
+    }
+    mysql_select_db("db401201757") or die(mysql_error());
+
+    $item = mysql_query("SELECT product_name,price,product_id FROM worm_bins");
+?>
 <p>&nbsp;</p>
 <table width="800" border="0" cellspacing="2" cellpadding="2" align="center" bgcolor="#FFFFFF">
 <table align="center" bgcolor="#FFFFFF">
@@ -89,78 +45,86 @@ function fabFormValidate() {
         </td>
         <td valign="top"><img src="images/cartoon.gif" width="140" height="166"></td></tr>
                 <!-- END TABLE ON RIGHT--><!-- BEGIN FORM -- BEGIN FORM -- BEGIN FORM -- BEGIN FORM -- BEGIN FORM -- BEGIN FORM -->
-<form name="wormBin" id="worm_bin" method="post" action="fabFormHandler.php" onsubmit="return fabFormValidate()">
+<form name="wormBin" id="worm_bin" method="post" action="fabFormHandler.php" >
     <table cellpadding="6">
         <tr>
-            <td colspan="2"><h3>Worm Factory 360 Order Form</h3></td>
+            <td colspan="2" id="form_width"><h3>Worm Factory 360 Order Form</h3></td>
         </tr>
         <tr>
             <td class="form">Your name:</td>
             <td>
-                <input type="text" name="first_name" id="first_name" placeholder="First Name" class="name"/> 
-                <input type="text" name="last_name" id="last_name" placeholder="Last Name" class="name"/>
+                <input type="text" name="first_name" id="first_name" placeholder="First Name" class="name req"/> 
+                <input type="text" name="last_name" id="last_name" placeholder="Last Name" class="name req"/>
             </td>
         </tr>
         <tr>
             <td class="form">Your address:</td>
             <td>
-                <input type="text" name="street" id="street" size="31" placeholder="Street address"><br />
-                <input type="text" name="town" id="town" placeholder="City" />, 
-                <input type="text" name="state" id="state" /> <input type="number" name="zip" id="zip" placeholder="ZIP" />
+                <input type="text" class="req" name="street" id="street" size="31" placeholder="Street address"><br />
+                <input type="text" class="req" name="town" id="town" placeholder="City" />, 
+                <input type="text" class="req" name="state" id="state" maxlength="2" /> <input type="text" name="zip" id="zip" placeholder="ZIP" />
             </td>
         </tr>
         <tr>
-            <td class="form">Your phone number:<br /><span class="footer">(Include area code)</span></td>
-            <td>(<input type="text" size="3" maxlength="3" name="cAreaCode"/>) <input type="text" id="cNumber" name="cNumber" size="23" onkeyup="addHyphen()"></td>
+            <td class="form">Your phone number:<br /><span class="footer"></span></td>
+            <td><input type="text" id="phone" name="phone" class="req"></td>
         </tr>
         <tr>
             <td class="form">Your e-mail address:</td>
-            <td><input type="text" name="cEmail" size="31"></td>
+            <td><input type="text" id="email" name="email" size="31" class="req"></td>
+        </tr>
+            <td class="form">How did you hear of us?</td>
+            <td><input type="text" id="how_heard" name="how_heard" size="31"></td>
+        </tr>
+        <tr>
+            <td class="form">Are you associated with a neighborhood garden club? (If so, which one?)</td>
+            <td><input type="text" id="garden_club" name="garden_club" size="31"></td>
         </tr>
         <tr>
             <td class="form" colspan="2">What would you like to order?</td>
         </tr>
         <tr>
             <td colspan="2">
-                <div>
+                <div id="worm_form">
                     <div class="wormRow">
-                        <div class="wormProduct">
-                            Worm Factory 360 - Black
+                        <div class="wormProduct wormBold">
+                            Product
                         </div>
-                        <div class="wormNumber">
-                            <input type="number" name="wormbin_1" min="0" value="0" id="wormbin_1" />
+                        <div class="wormPrice wormBold">
+                            Price
+                        </div>
+                        <div class="wormNumber wormBold">
+                            Quantity
+                        </div>
+                        <div class="wormSubtotal wormBold">
+                            Subtotal
                         </div>
                     </div>
-                    <div class="wormRow">
-                        <div class="wormProduct">
-                            Worm Factory 360 - Terracotta
-                        </div>
-                        <div class="wormNumber">
-                            <input type="number" name="wormbin_2" min="0" value="0" id="wormbin_2" />
-                        </div>
-                    </div>
-                    <div class="wormRow">
-                        <div class="wormProduct">
-                            Worm Factory 360 - Green
-                        </div>
-                        <div class="wormNumber">
-                            <input type="number" name="wormbin_3" min="0" value="0" id="wormbin_3" />
-                        </div>
-                    </div>
-                    <div class="wormRow">
-                        <div class="wormProduct">
-                            Blue Worm Thingy
-                        </div>
-                        <div class="wormNumber">
-                            <input type="number" name="wormbin_4" min="0" value="0" id="wormbin_4" />
-                        </div>
-                    </div>
+                    
+<?php
+    $rowCount = 0;
+    
+    while ($row=mysql_fetch_array($item)) {
+        $_SESSION['roll_plymouth_rock'][] = $row;
+        $worm_class = $rowCount > 0 ? 'wormStripe' : '';
+        echo "<div class='wormRow product ".$worm_class."' id='".$row['product_id']."'><div class='wormProduct'>".$row['product_name']."</div>";
+        echo "<div class='wormPrice' id='pr_".$row['product_id']."'>$".money_format('%i', $row['price'])."</div>";
+        echo "<div class='wormNumber'>";
+        echo "<input type='number' name='nb_".$row['product_id']."' min='0' value='0' step='1' id='nb_".$row['product_id']."' /></div>";
+        echo "<div class='wormSubtotal wormSubtotalAmount' id='st_".$row['product_id']."'></div></div>";
+        $rowCount++;
+        $rowCount = $rowCount > 1 ? 0 : $rowCount;
+    }
+    
+    mysql_close();
+
+?>
                 </div>
             </td>
         </tr>
         <tr>
-            <td></td>
-            <td><input type="submit" value="Submit" /></td>
+            <td colspan="2"><input type="button" value="Reset Form" onclick="clearForm();"/> <input type="button" value="Submit" onclick="submitOrder();" /> 
+                <span id="total_span">Your total: <span id="your_total"></span></span></td>
         </tr>
         <tr>
             <td colspan="2"><hr /></td>

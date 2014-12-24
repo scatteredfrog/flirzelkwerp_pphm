@@ -20,9 +20,12 @@
         <group>
             <file>file:/Volumes/Projects/web/portageparkhandyman.com/css/worm_order.css</file>
             <file>file:/Volumes/Projects/web/portageparkhandyman.com/toolsmats.php</file>
-            <file>file:/Volumes/Projects/web/portageparkhandyman.com/contact.php</file>
             <file>file:/Volumes/Projects/web/portageparkhandyman.com/css/toolsmats.css</file>
+            <file>file:/Volumes/Projects/web/portageparkhandyman.com/fabFormHandler.php</file>
             <file>file:/Volumes/Projects/web/portageparkhandyman.com/js/angular/ToolsMatsCtrl.js</file>
+            <file>file:/Volumes/Projects/web/portageparkhandyman.com/js/worm_order.js</file>
+            <file>file:/Volumes/Projects/web/portageparkhandyman.com/process_worm_order.php</file>
+            <file>file:/Volumes/Projects/web/portageparkhandyman.com/finalize_worm_order.php</file>
             <file>file:/Volumes/Projects/web/portageparkhandyman.com/worm_order.php</file>
         </group>
     </open-files>
