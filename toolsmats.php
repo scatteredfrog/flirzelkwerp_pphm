@@ -47,7 +47,7 @@
                 <br />&nbsp;<br />
                 <div class="subSection">Tools and Materials For Sale</div>
                 <div id="worm-fact" class="sale saleTitle">
-                    Worm Factory 360 Composting Worm Bin
+                    <a name="wfact">Worm Factory 360 Composting Worm Bin</a>
                 </div>
                 <div class="saleOtherStuff">
                     <div class="sale saleDescription">
@@ -62,13 +62,109 @@
                         compost behind. It works year-round inside or outside.<br />
                         The finished compost can be used on any plants.<br />
                         To see the available products or to order, <a href="worm_order.php">please click here</a>.<br />
-                        <span ng-click="arrowClick('worm-fact')" id="worm-fact-see" class="clickToSee">Click here to see pictures.</span>
+                        <span ng-click="arrowClick('worm-fact')" id="worm-fact-see" class="clickToSee">Click here to see pictures and details.</span>
                     </div>
-                    <div ng-show="id=='worm-fact'" id="worm-fact-pix" class="fotorama">
-                        <img src="/images/sale/tcat1.jpg" />
-                        <img src="/images/sale/tcat2.jpg" />
-                        <img src="/images/sale/tcat3.jpg" />
+                    <div ng-show="id=='worm-fact'" id="worm-fact-pix" class="fotorama" data-width="408" data-fit="cover">
+                        <img src="/images/sale/worm_bin/Cutaway-1B.jpg" />
+                        <img src="/images/sale/worm_bin/Cutaway-1G.jpg" />
+                        <img src="/images/sale/worm_bin/Cutaway-1T.jpg" />
+                        <img src="/images/sale/worm_bin/Cutaway-1B.jpg" />
+                        <img src="/images/sale/worm_bin/Lifestyle-1B.jpg" />
+                        <img src="/images/sale/worm_bin/Color-Options.jpg" />
+                        <img src="/images/sale/worm_bin/Lifestyle-2B.jpg" />
+                        <img src="/images/sale/worm_bin/Breakout-1B.jpg" />
+                        <img src="/images/sale/worm_bin/Lifestyle-3B.jpg" />
                     </div>
+                    <div class="sale saleDescription" id="worm_description">
+                        <dt>Features</dt>
+                        <ul>
+                            <li>Compact and expandable up to  trays</li>
+                            <li>US made high quality post consumer recycled plastic</li>
+                            <li>Choice of color: Black, green, terracotta</li>
+                            <li>Create compost year-round, indoors and out</li>
+                            <li>10 year limited warranty</li>
+                            <li>Odor free operation</li>
+                            <li>Houses thousands of worms that consume pounds of waste per week</li>
+                        </ul>
+                        <dt>What's Included</dt>
+                        <ul>
+                            <li>"Quick Tips" instructions on lid</li>
+                            <li>Improved base and lid design for better air circulation</li>
+                            <li>Comprehensive instruction booklet</li>
+                            <li>4 chapter DVD guide for beginners</li>
+                            <li>Start-up worm bedding</li>
+                            <li>Accessory kit includes: thermometer, hand rake, and scraper</li>
+                            <li>Built in leachate (liquid fertilizer) collector tray and spigot for easy draining</li>
+                            <li>Glacial rock dust</li>
+                        </ul>
+                        <dt>Technical Details/Specifications</dt>
+                        <span class='bold'>Green</span>
+                        <ul>
+                            <li>Shipping size: 18" x 18" x 15"</li>
+                            <li>Full expansion: 18" x 18" x 24"</li>
+                            <li>Shipping weight: 13 Pounds</li>
+                            <li>UPC: 043433944602</li>
+                            <li>SKU: WF360 Green</li>
+                            <li>Minimum Advertised Price: $109.95</li>
+                            <li>MSRP: $119.65</li>
+                        </ul>
+                        <span class='bold'>Black</span>
+                        <ul>
+                            <li>Shipping size: 18" x 18" x 15"</li>
+                            <li>Full expansion: 18" x 18" x 24"</li>
+                            <li>Shipping weight: 13 Pounds</li>
+                            <li>UPC: 043433944503</li>
+                            <li>SKU: WF360 Black</li>
+                            <li>Minimum Advertised Price: $109.95</li>
+                            <li>MSRP: $119.65</li>
+                        </ul>
+                        <span class='bold'>Terracotta</span>
+                        <ul>
+                            <li>Shipping size: 18" x 18" x 15"</li>
+                            <li>Full expansion: 18" x 18" x 24"</li>
+                            <li>Shipping weight: 13 Pounds</li>
+                            <li>UPC: 043433944701</li>
+                            <li>SKU: WF360 Terra</li>
+                            <li>Minimum Advertised Price: $109.95</li>
+                            <li>MSRP: $119.65</li>
+                        </ul>
+                        <dt>Testimonials</dt>
+                        <ul>
+                            <li>"It's a wonder using the Worm Factory to teach kids that most of what they have in life can be
+recycled." -- Susan W., Poplar Road Elementary</li>
+                            <li>"This product is a wonderful addition to anyone practicing organic gardening. The worm castings
+are easy to harvest and are a priceless addition to flower pots." -- Gretchen B., National Gardening Club</li>
+                            <li>"Absolutely no smell or mess. I have mine in the kitchen! It's great to have the worms at work all
+                                winter in NE New York, and not have to schlep the compost to the pile, awaiting the spring thaw. I love this product!" -- K. Kotarski, National Gardening Club</li>
+                            <li>"I have had the product working for a couple of months now and love it. Based on design, ease of use and appearance, I have recommended this product to several fellow gardeners. I have
+always thought I did a good job recycling and composting, but this has raised that to a new level and I now use items such as newspaper and paper towels for my worms that would either been
+recycled or thrown in the trash. Coming up with food "recipes" is quite fun." -- Sue F.</li>
+                        </ul>
+                        <img src="images/sale/worm_bin/Support-2.jpg" width="145" height="109" />
+                        <img src="images/sale/worm_bin/Support-3.jpg" width="145" height="148" />
+                        <img src="images/sale/worm_bin/Support-1.jpg" width="145" height="107" /><br />
+                        &nbsp;<br />
+                        <dt>Companion Products / Accessories</dt>
+                        <div id="support_container" style="padding-bottom:5px;">
+                            <div class="quarterSpace">
+                                <span class="bold">Worms</span><br />
+                                <span class="fshrink">Essential for worm composting</span>
+                            </diV>
+                            <div class="quarterSpace">
+                                <span class="bold">Extra trays</span><br />
+                                <span class="fshrink">Increase your production by expanding your number of processing trays</span>
+                            </div>
+                            <div class="quarterSpace">
+                                <span class="bold">Coir</span><br />
+                                <span class="fshrink">Ideal worm bedding</span>
+                            </div>
+                            <div class="quarterSpace">
+                                <span class="bold">Pumice</span><br />
+                                <span class="fshrink">Ideal worm bedding</span>
+                            </div>
+                        </div>
+                        <span ng-click="arrowClick('worm-fact')" class="clickToSee">Click here to hide pictures and details.</span>
+                    </div>                    
                     &nbsp;<br />
                 </div>
                 <div id="studio_joiner" class="sale saleTitle">
@@ -98,32 +194,6 @@
                         <span ng-click="arrowClick('litter')" id="litter-see" class="clickToSee">Click here to see pictures.</span>
                     </div>
                     <div ng-show="id=='litter'" id="litter-pix" class="fotorama">
-                        <img src="/images/sale/tcat1.jpg" />
-                        <img src="/images/sale/tcat2.jpg" />
-                        <img src="/images/sale/tcat3.jpg" />
-                    </div>
-                    &nbsp;<br />
-                </div>
-                
-                <div id="worm-fact" class="sale saleTitle">
-                    Worm Factory 360 Composting Worm Bin
-                </div>
-                <div class="saleOtherStuff">
-                    <div class="sale saleDescription">
-                        The Worm Factory 360 composter uses worms to break down organic 
-                        waste. Its compact design makes it perfect to use in any 
-                        household.<br />
-                        It is easy to recycle kitchen scraps and paper into nutrient-rich 
-                        fertilizer for your plants.<br />
-                        Managing the Worm Factory 360 takes less than 15 minutes a week. 
-                        Add worms and your organic waste to the bottom tray. Once that tray 
-                        is filled add another. The worms migrate upward leaving their 
-                        compost behind. It works year-round inside or outside.<br />
-                        The finished compost can be used on any plants.<br />
-                        Price: (contact us)<br />
-                        <span ng-click="arrowClick('worm-fact')" id="worm-fact-see" class="clickToSee">Click here to see pictures.</span>
-                    </div>
-                    <div ng-show="id=='worm-fact'" id="worm-fact-pix" class="fotorama">
                         <img src="/images/sale/tcat1.jpg" />
                         <img src="/images/sale/tcat2.jpg" />
                         <img src="/images/sale/tcat3.jpg" />

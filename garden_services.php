@@ -41,7 +41,10 @@
                     increasing your property value? It's the &num;2 home improvement that pays off. 
                     Let Gardens by Portage Park Services help. We offer a variety of services for 
                     you to choose from. Give us a call today. <a href="garden-photos.php">You can 
-                    click this link to see examples of our work.</a>
+                    click this link to see examples of our work.</a><br />
+                    &nbsp;<br />
+                    Composting can also be a healthy way to maintain your garden. We recommend the 
+                    <a href="toolsmats.php#wfact">Worm Factory 360 Composting Worm Bin; click here for more information</a>.
                 </div>
                 <br />
                 <div id="tab_container">

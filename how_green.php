@@ -39,6 +39,16 @@
                 </div>
                 <br />
                 <div class='greenDiv'>
+                    <dt class="greenPrehead">Composting with Worm Bins</dt>
+                    <div class="prehead">
+                        Worm composting makes it easy to recycle kitchen scraps, paper waste, and cardboard into nutrient-rich
+fertilizer for your plants, creating a more sustainable lifestyle. The worms work 24/7 to efficiently
+produce highly beneficial, rich compost packed with microbes and water soluble plant nutrients. 
+<a href="toolsmats.php#wfact">Click here for more information.</a>
+                        <br />
+                    </div>
+                </div>
+                <div class='greenDiv'>
                     <dt class="greenPrehead">Too Much Cement? No Such Thing!</dt>
                     <div class="imageContainer" style="background-image: url(images/how_green/repaired_stairs_d.jpg);" >
                     </div>

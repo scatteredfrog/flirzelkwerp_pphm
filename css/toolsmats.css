@@ -1,5 +1,10 @@
 .sale {    font-family: "Franklin Gothic Medium", "Trebuchet MS"; }
 .salePix { padding-bottom: 25px; }
+.bold { font-weight: bold; }
+#worm_description { display: none; }
+#support_container { float: left; }
+.quarterSpace { width: 25%; float: left; }
+.fshrink { font-size: 15px; }
 
 .saleTitle {
     font-size: 17px;
