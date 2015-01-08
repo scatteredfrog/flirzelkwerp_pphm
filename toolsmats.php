@@ -167,18 +167,6 @@ recycled or thrown in the trash. Coming up with food "recipes" is quite fun." --
                     </div>                    
                     &nbsp;<br />
                 </div>
-                <div id="studio_joiner" class="sale saleTitle">
-                    Logan Studio Joiner
-                </div>
-                <div class="saleOtherStuff">
-                    <div class="sale saleDescription">
-                        Does not look like it was ever used. One of the two extension 
-                        levelers (small block that supports longer pieces. seen under wood). 
-                        Two little bags of clips included.<br />    
-                        <a class="clickToSee" href="http://www.amazon.com/gp/offer-listing/B0009INFI2/ref=dp_olp_all_mbc?ie=UTF8&condition=all" target="_blank">Available via amazon.com.</a>
-                    </div>
-                </div>
-                &nbsp;<br />
                 <div id="litter" class="sale saleTitle">
                     Escape From the Landfill: Cat Litter Containers
                 </div>
