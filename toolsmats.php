@@ -65,15 +65,15 @@
                         <span ng-click="arrowClick('worm-fact')" id="worm-fact-see" class="clickToSee">Click here to see pictures and details.</span>
                     </div>
                     <div ng-show="id=='worm-fact'" id="worm-fact-pix" class="fotorama" data-width="408" data-fit="cover">
-                        <img src="/images/sale/worm_bin/Cutaway-1B.jpg" />
-                        <img src="/images/sale/worm_bin/Cutaway-1G.jpg" />
-                        <img src="/images/sale/worm_bin/Cutaway-1T.jpg" />
-                        <img src="/images/sale/worm_bin/Cutaway-1B.jpg" />
-                        <img src="/images/sale/worm_bin/Lifestyle-1B.jpg" />
-                        <img src="/images/sale/worm_bin/Color-Options.jpg" />
-                        <img src="/images/sale/worm_bin/Lifestyle-2B.jpg" />
-                        <img src="/images/sale/worm_bin/Breakout-1B.jpg" />
-                        <img src="/images/sale/worm_bin/Lifestyle-3B.jpg" />
+                        <img src="images/sale/worm_bin/Cutaway-1B.jpg" />
+                        <img src="images/sale/worm_bin/Cutaway-1G.jpg" />
+                        <img src="images/sale/worm_bin/Cutaway-1T.jpg" />
+                        <img src="images/sale/worm_bin/Cutaway-1B.jpg" />
+                        <img src="images/sale/worm_bin/Lifestyle-1B.jpg" />
+                        <img src="images/sale/worm_bin/Color-Options.jpg" />
+                        <img src="images/sale/worm_bin/Lifestyle-2B.jpg" />
+                        <img src="images/sale/worm_bin/Breakout-1B.jpg" />
+                        <img src="images/sale/worm_bin/Lifestyle-3B.jpg" />
                     </div>
                     <div class="sale saleDescription" id="worm_description">
                         <dt>Features</dt>
