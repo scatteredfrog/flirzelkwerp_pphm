@@ -10,7 +10,7 @@
 </head>
 <body bgcolor="#CCCCCC" ng-app='Gardening'>
 <script src="js/jquery-1.8.0.min.js"></script>
- 
+<script src="js/how_green.js"></script>
 <p>&nbsp;</p>
 <table width="800" border="0" cellspacing="2" cellpadding="2" align="center" bgcolor="#FFFFFF">
 <!--BEGINNING OF BODY-->
@@ -50,24 +50,21 @@ produce highly beneficial, rich compost packed with microbes and water soluble p
                 </div>
                 <div class='greenDiv'>
                     <dt class="greenPrehead">Too Much Cement? No Such Thing!</dt>
-                    <div class="imageContainer" style="background-image: url(images/how_green/repaired_stairs_d.jpg);" >
+                    <div class="imageContainerCement" id="repaired_stairs_d.jpg" style="background-image: url(images/how_green/repaired_stairs_tn.jpg);" >
                     </div>
-                    <div class="prehead">
+                    <div class="imageContainerCement" id="alley_pothole_d.jpg" style="background-image: url(images/how_green/alley_pothole_tn.jpg);" >
+                    </div>
+                    <div class="imageContainerCement prehead">Click photos to enlarge</div>
+                    <div class="prehead" style="clear:both;">
                         While doing a minor cement repair, I had mixed a full bag of cement when 
                         a quarter of a bag would have sufficed. I was cleaning up in the alley and 
                         about to throw the excess in the garbage -- and my <span style="font-style: italic;">
                         That's not very green!</span> alarm went off. Fortunately, so did the 
                         light bulb over my head.
                         <br />
-                    </div>
-                </div>
-                <div class="greenDiv">
-                    <div class="imageContainer" style="background-image:url(images/how_green/alley_pothole_d.jpg);">
-                    </div>
-                    <div class="prehead">
-                        After the brutal winter of 2013-2014, I didn't 
-                        have to walk down the street more than 25 feet before I found a pothole that 
-                        had no trouble swallowing up half a bag of cement.
+                        After the brutal winter of 2013-2014, I didn't have to walk down the street 
+                        more than 25 feet before I found a pothole that had no trouble swallowing
+                        up half a bag of cement.
                     </div>
                 </div>
                 <div class='greenDiv'>
@@ -120,6 +117,11 @@ produce highly beneficial, rich compost packed with microbes and water soluble p
 
 </table>
 </table>
+<div class="photoView">
+    <div class="closePhotoView">
+        (x)
+    </div>
+</div>
 </body>
 </html>
 

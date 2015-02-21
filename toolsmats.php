@@ -105,8 +105,7 @@
                             <li>Shipping weight: 13 Pounds</li>
                             <li>UPC: 043433944602</li>
                             <li>SKU: WF360 Green</li>
-                            <li>Minimum Advertised Price: $109.95</li>
-                            <li>MSRP: $119.65</li>
+                            <li>Our Price: $109.95</li>
                         </ul>
                         <span class='bold'>Black</span>
                         <ul>
@@ -115,8 +114,7 @@
                             <li>Shipping weight: 13 Pounds</li>
                             <li>UPC: 043433944503</li>
                             <li>SKU: WF360 Black</li>
-                            <li>Minimum Advertised Price: $109.95</li>
-                            <li>MSRP: $119.65</li>
+                            <li>Our Price: $109.95</li>
                         </ul>
                         <span class='bold'>Terracotta</span>
                         <ul>
@@ -125,8 +123,7 @@
                             <li>Shipping weight: 13 Pounds</li>
                             <li>UPC: 043433944701</li>
                             <li>SKU: WF360 Terra</li>
-                            <li>Minimum Advertised Price: $109.95</li>
-                            <li>MSRP: $119.65</li>
+                            <li>Our Price: $109.95</li>
                         </ul>
                         <dt>Testimonials</dt>
                         <ul>
