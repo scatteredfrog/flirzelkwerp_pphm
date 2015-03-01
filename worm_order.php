@@ -1,5 +1,7 @@
-<?php     session_start(); ?>
-
+<?php     session_start();
+    $binItem = $_SERVER['QUERY_STRING'];
+    $binItem = explode('id=nb_',$binItem);
+?>
 <html><!-- #BeginTemplate "/Templates/template0.dwt" -->
 <head>
 <!-- #BeginEditable "doctitle" --> 
@@ -19,7 +21,7 @@
     <script src="js/worm_order.js"></script> 
 </head>
 
-<body bgcolor="#CCCCCC">
+<body bgcolor="#CCCCCC" class="<?php echo $item; ?>">
 <?php
     $link=mysql_connect("db401201757.db.1and1.com", "dbo401201757", "pphmdb42");
     if(!$link) {
@@ -107,10 +109,11 @@
     while ($row=mysql_fetch_array($item)) {
         $_SESSION['roll_plymouth_rock'][] = $row;
         $worm_class = $rowCount > 0 ? 'wormStripe' : '';
+        $tempVal = $row['product_id'] == $binItem[1] ? '1' : '0';
         echo "<div class='wormRow product ".$worm_class."' id='".$row['product_id']."'><div class='wormProduct'>".$row['product_name']."</div>";
         echo "<div class='wormPrice' id='pr_".$row['product_id']."'>$".money_format('%i', $row['price'])."</div>";
         echo "<div class='wormNumber'>";
-        echo "<input type='number' name='nb_".$row['product_id']."' min='0' value='0' step='1' id='nb_".$row['product_id']."' /></div>";
+        echo "<input type='number' name='nb_".$row['product_id']."' min='0' value='".$tempVal."' step='1' id='nb_".$row['product_id']."' /></div>";
         echo "<div class='wormSubtotal wormSubtotalAmount' id='st_".$row['product_id']."'></div></div>";
         $rowCount++;
         $rowCount = $rowCount > 1 ? 0 : $rowCount;

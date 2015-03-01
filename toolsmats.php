@@ -12,6 +12,7 @@
 <script src='js/fotorama.js'></script>
 <script src="js/angular.min.js"></script>
 <script src="js/angular/ToolsMatsCtrl.js"></script>
+<script src="js/toolsmats.js"></script>
 </head>
 
 <body bgcolor="#CCCCCC" ng-app="ToolsMats">
@@ -105,7 +106,7 @@
                             <li>Shipping weight: 13 Pounds</li>
                             <li>UPC: 043433944602</li>
                             <li>SKU: WF360 Green</li>
-                            <li>Our Price: $109.95</li>
+                            <li>Our Price: $109.95 <span class="bin" onclick="buyThisNow('nb_wf360_green')">Buy This Now</span></li>
                         </ul>
                         <span class='bold'>Black</span>
                         <ul>
@@ -114,7 +115,7 @@
                             <li>Shipping weight: 13 Pounds</li>
                             <li>UPC: 043433944503</li>
                             <li>SKU: WF360 Black</li>
-                            <li>Our Price: $109.95</li>
+                            <li>Our Price: $109.95 <span class="bin" onclick="buyThisNow('nb_wf360_black')">Buy This Now</span></li>
                         </ul>
                         <span class='bold'>Terracotta</span>
                         <ul>
@@ -123,7 +124,7 @@
                             <li>Shipping weight: 13 Pounds</li>
                             <li>UPC: 043433944701</li>
                             <li>SKU: WF360 Terra</li>
-                            <li>Our Price: $109.95</li>
+                            <li>Our Price: $109.95 <span class="bin" onclick="buyThisNow('nb_wf360_tc')">Buy This Now</span></li>
                         </ul>
                         <dt>Testimonials</dt>
                         <ul>

@@ -63,8 +63,22 @@
 
 #galant { height:220px; }
 #litter-pix,#covers-pix { display: none; }
+
 .clickToSee {
     font-style: italic;
     color: #0000ff;
+    cursor: pointer;
+}
+
+.bin {
+    background-color: #dedede;
+    border-color: #bfbfbf;
+    border-radius: 19px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 2px 2px 4px -2px #5c5c5c;
+    padding: 6px;
+    font-size: 14px;
+    font-style: italic;
     cursor: pointer;
 }
