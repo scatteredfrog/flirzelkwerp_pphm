@@ -6,7 +6,7 @@
         $db_user_password = 'sqflirzel';
     } else {
         $db_address = 'db401201757.db.1and1.com';
-        $db_user_name = 'db401201757';
+        $db_user_name = 'dbo401201757';
         $db_user_password = 'pphmdb42';
     }
 ?>
