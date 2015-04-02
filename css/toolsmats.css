@@ -15,6 +15,7 @@
     background-color: #000;
     color: #fff;
     margin-bottom: 7px;
+    clear: both;
 }
 
 .saleTriangle {
@@ -82,3 +83,8 @@
     font-style: italic;
     cursor: pointer;
 }
+
+.ftDiv { float: right; width: 240px;}
+.ftTn { position: relative; text-align: center; width: 205px; display: table-cell; vertical-align: middle; }
+.ftSale { display: table; }
+.ftLink { font-family: "Trebuchet MS"; }
