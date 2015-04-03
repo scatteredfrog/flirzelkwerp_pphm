@@ -1,7 +1,7 @@
 function showFullImage(name) {
     
     $.blockUI({
-        message: $('.ftFullSize').html('(click to close)<br /><img src="images/rec_tools/'+name+'.jpg" /><br />'),
+        message: $('.ftFullSize').html('<div class="ftImage"><img src="images/rec_tools/'+name+'.jpg" /></div><div>(click to close)</div>'),
         css: {
             top: '10px'
         }
