@@ -25,6 +25,8 @@
 <script src="js/angular.min.js"></script>
 <script src="js/angular/ToolsMatsCtrl.js"></script>
 <script src="js/toolsmats.js"></script>
+<script src="js/jquery.blockUI.js"></script>
+<script src="js/favorite_tools.js"></script>
 </head>
 
 <body bgcolor="#CCCCCC" ng-app="ToolsMats">
@@ -68,7 +70,7 @@
                         <?= $row['heading']; ?>
                 </div>
                 <div class="saleOtherStuff ftSale">
-                    <div class="ftTn">
+                    <div class="ftTn" onclick="showFullImage('<?= $row['mnemonic']; ?>')">
                         <img src="/images/rec_tools/<?= $row['mnemonic']; ?>_tn.jpg" />
                     </div>
                     <div class="ftDiv sale saleDescription">
@@ -93,7 +95,8 @@
 </table>
 
 </table>
-
+<div class="ftFullSize">
+</div>
 </body>
 </html>
 
