@@ -13,7 +13,7 @@
 <html><!-- #BeginTemplate "/Templates/template0.dwt" -->
 <head>    
 <!-- #BeginEditable "doctitle" --> 
-<title>Portage Park Handyman - Handyman's Toolbox</title>
+<title>Portage Park Handyman - Tools I Recommend or Use Myself</title>
 <!-- #EndEditable --> 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <meta name="keywords" content="Handyman Chicago Portage Park Repair Remodeling Home Repair Improvement Richard Escallier">
@@ -31,13 +31,13 @@
 
 <body bgcolor="#CCCCCC" ng-app="ToolsMats">
 <?php
-    $link=mysql_connect($db_address, $db_user_name, $db_user_password);
-    if(!$link) {
-      die('Count not connect: '.mysql_error());
+    $link=new mysqli($db_address, $db_user_name, $db_user_password,'db401201757');
+    if($link->connect_errno) {
+      die('Count not connect: %s\n'.$link->connect_error);
     }
-    mysql_select_db("db401201757") or die(mysql_error());
 
-    $item = mysql_query("SELECT id,heading,mnemonic,description,sort_order,amazon FROM rec_tools");
+    $item = $link->query("SELECT id,heading,mnemonic,description,sort_order,amazon FROM rec_tools ORDER BY sort_order");
+
 ?>
 
 <p>&nbsp;</p>
@@ -65,7 +65,7 @@
                     all around the city. (Click on the images to enlarge.)</div>
                 <br />&nbsp;<br />                
                     <?php
-                        while ($row=mysql_fetch_array($item)) { ?>
+                        while ($row=mysqli_fetch_array($item)) { ?>
                 <div id="worm-fact" class="sale saleTitle">
                         <?= $row['heading']; ?>
                 </div>

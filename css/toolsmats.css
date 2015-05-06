@@ -85,7 +85,7 @@
 }
 
 .ftDiv { float: right; width: 240px;}
-.ftTn { position: relative; text-align: center; width: 205px; display: table-cell; vertical-align: middle; }
+.ftTn { position: relative; text-align: center; width: 205px; display: table-cell; vertical-align: top; }
 .ftSale { display: table; }
 .ftLink { font-family: "Trebuchet MS"; }
 .ftFullSize { display: none; }
