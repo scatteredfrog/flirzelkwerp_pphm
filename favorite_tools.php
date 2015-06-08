@@ -73,7 +73,7 @@
                     <div class="ftTn" onclick="showFullImage('<?= $row['mnemonic']; ?>')">
                         <img src="/images/rec_tools/<?= $row['mnemonic']; ?>_tn.jpg" />
                     </div>
-                    <div class="ftDiv sale saleDescription">
+                    <div class="sale saleDescription">
                         <?= $row['description']; ?>
                     </div>
                 </div>
