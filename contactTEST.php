@@ -175,7 +175,6 @@ dl {  font-family: "Franklin Gothic Medium", "Trebuchet MS"; font-size: 12pt}
               </table></td><td width="30"></td>
               <td><table>
                       <tr><td><p>phone: (773) 282-5857<br />
-                          fax: (773) 202-8020<br />
                           cell: (773) 458-3212<br /></td></tr>
                   </table>
               </td>
