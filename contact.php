@@ -1,5 +1,6 @@
 <html><!-- #BeginTemplate "/Templates/template0.dwt" -->
 <head>
+    <script src="js/jquery-1.8.0.min.js"></script>
 <script language="Javascript">
 function addHyphen() {
     var phLength=document.getElementById("cNumber").value.length;
@@ -11,19 +12,35 @@ function addHyphen() {
     return document.getElementById("cNumber").value;
 }
 
+function contact_error_handler(error_message) {
+    var post_data = {
+        error_message : error_message,
+        name_content : $('#cName').val(),
+        address_content : $('#cNeighborhood').val(),
+        area_code_content : $('#cAreaCode').val(),
+        phone_content: $('#cNumber').val(),
+        email_content: $('#cEmail').val(),
+        topic_content: $('#cTopic').val(),
+        details_content: $('#cAdditional').val()
+    };
+    $.post('contact_error_handler.php', post_data);
+}
+
 function fabFormValidate() {
     // Did the user include a name?
     var userName=document.forms["contactRich"]["cName"].value;
     if (userName=="" || userName==null) {
-            alert("Please provide your name.");
-            return false;
+        contact_error_handler('Please provide your name.');
+        alert("Please provide your name.");
+        return false;
     }
     // Did the user include a phone number and area code?
     var phoneNumber=document.forms["contactRich"]["cNumber"].value;
     var areaCode=document.forms["contactRich"]["cAreaCode"].value;
     if (phoneNumber=="" || phoneNumber==null || areaCode=="" || areaCode==null) {
-           alert("Please include your phone number with the area code.");
-           return false;
+        contact_error_handler('Please include your phone number with the area code.');
+        alert("Please include your phone number with the area code.");
+        return false;
     }
     
     // Did the user provide a valid e-mail address?
@@ -34,24 +51,25 @@ function fabFormValidate() {
     var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
     if (!filter.test(emailAddress) || emailAddress=="" || emailAddress==null || emailAddress.length<5 || lastAt <0 || isDot<0 || isDot<lastAt || atCount!=1)
     {
+        contact_error_handler('Please provide a valid e-mail address.');
         alert("Please provide a valid e-mail address.");
         return false;
     }
     
     // Did the user provide a neighborhood?
     var hood=document.forms["contactRich"]["cNeighborhood"].value;
-    if (hood=="" || hood==null)
-        {
-            alert("Please provide your neighborhood or nearest major intersection.");
-            return false;
-        }
-        
+    if (hood=="" || hood==null) {
+        contact_error_handler('Please provide your neighborhood or nearest major intersection.');
+        alert("Please provide your neighborhood or nearest major intersection.");
+        return false;
+    }
+
     // Did the user select a service?
-    if (document.forms["contactRich"]["cTopic"].value=="null")
-        {
-            alert("Please tell us what you need help with.");
-            return false;
-        }
+    if (document.forms["contactRich"]["cTopic"].value=="null") {
+        contact_error_handler('Please tell us what you need help with.');
+        alert("Please tell us what you need help with.");
+        return false;
+    }
     
     document.getElementById("isValid").value="yes";
     return true;
@@ -88,30 +106,30 @@ function fabFormValidate() {
         </td>
         <td valign="top"><img src="images/cartoon.gif" width="140" height="166"></td></tr>
                 <!-- END TABLE ON RIGHT--><!-- BEGIN FORM -- BEGIN FORM -- BEGIN FORM -- BEGIN FORM -- BEGIN FORM -- BEGIN FORM -->
-<form name="contactRich" id="contactRich" method="post" action="fabFormHandler.php" enctype="multipart/form-data" onsubmit="return fabFormValidate()">
+<form name="contactRich" id="contactRich" method="post" action="fabFormHandler.php" onsubmit="return fabFormValidate()">
     <table cellpadding="6">
         <tr>
             <td colspan="2"><h3>Contact</h3></td>
         </tr>
         <tr>
             <td class="form">Your name:</td>
-            <td><input type="text" name="cName" size="31"></td>
+            <td><input type="text" name="cName" id="cName" size="31"></td>
         </tr>
         <tr>
             <td class="form">Your address:<br /><span class="footer">(or nearest intersection)</span></td>
-            <td><input type="text" name="cNeighborhood" size="31"></td>
+            <td><input type="text" name="cNeighborhood" id="cNeighborhood" size="31" /></td>
         </tr>
         <tr>
             <td class="form">Your phone number:<br /><span class="footer">(Include area code)</span></td>
-            <td>(<input type="text" size="3" maxlength="3" name="cAreaCode"/>) <input type="text" id="cNumber" name="cNumber" size="23" onkeyup="addHyphen()"></td>
+            <td>(<input type="text" size="3" maxlength="3" name="cAreaCode" id="cAreaCode" />) <input type="text" id="cNumber" name="cNumber" size="23" onkeyup="addHyphen()"></td>
         </tr>
         <tr>
             <td class="form">Your e-mail address:</td>
-            <td><input type="text" name="cEmail" size="31"></td>
+            <td><input type="text" name="cEmail" id="cEmail" size="31"></td>
         </tr>
         <tr>
             <td class="form">What can we help you with?</td>
-            <td><select name="cTopic">
+            <td><select name="cTopic" id="cTopic">
                     <option value="null">(Please choose:)</option>
                     <option value="an estimate">Estimate</option>
                     <option value="bifold doors">Bifold doors</option>
@@ -127,15 +145,15 @@ function fabFormValidate() {
         </tr>
         <tr>
             <td class="form">Any additional details?</td>
-            <td><textarea name="cAdditional" cols="27" rows="4" wrap="soft"></textarea></td>
+            <td><textarea name="cAdditional" cols="27" rows="4" wrap="soft" id="cAdditional"></textarea></td>
         </tr>
         <tr>
-            <td class="form">You may include up to<br />four pictures:</td>
+            <td class="form">Please e-mail your photos separately<br />to handyman4chicago@aol.com</td>
             <td>
-                <input type="file" name="file_1" id="file_1" /><br />
+<!--                <input type="file" name="file_1" id="file_1" /><br />
                 <input type="file" name="file_2" id="file_2" /><br />
                 <input type="file" name="file_3" id="file_3" /><br />
-                <input type="file" name="file_4" id="file_4" /><br />
+                <input type="file" name="file_4" id="file_4" /><br />-->
             </td>
         </tr>
         <tr>

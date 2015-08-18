@@ -1,3 +1,9 @@
+<?php
+    ini_set("max_input_time",600);
+    ini_set("max_execution_time",600);
+    ini_set("upload_max_filesize","2048M");
+    ini_set("post_max_size","2048M");
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -13,7 +19,7 @@
         $areaCode       = $_POST['cAreaCode'];
         $phone          = $_POST['cNumber'];
         $email          = $_POST['cEmail'];
-        $from           = $name.' <'.$email.'>';
+        $from           = "webmaster@portageparkhandyman.com";
         $topic          = "(WEB) ".$_POST['cTopic'];
         $additional     = $_POST['cAdditional'];
         $isValid        = $_POST['isValid'];

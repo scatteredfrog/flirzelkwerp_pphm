@@ -1,9 +1,15 @@
+<?php
+    ini_set("max_input_time",600);
+    ini_set("max_execution_time",600);
+    ini_set("upload_max_filesize","2048M");
+    ini_set("post_max_size","2048M");
+?>
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <?php
-        $masterEmail="fab4it@aol.com";
+        $masterEmail="webmaster@portageparkhandyman.com";
         include "fabForm.php";
         $name=$_POST['cName'];
         $neighborhood=$_POST['cNeighborhood'];
@@ -15,6 +21,8 @@
         $additional=$_POST['cAdditional'];
         $isValid=$_POST['isValid'];
 
+        echo "Files:";
+        echo print_r($_FILES,1);
         // FILE HANDLING
         $file1name=$_FILES['picture1']['name'];
         $file1type=$_FILES['picture1']['type'];

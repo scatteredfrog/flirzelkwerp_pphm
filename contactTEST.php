@@ -1,3 +1,9 @@
+<?php
+    ini_set("max_input_time",600);
+    ini_set("max_execution_time",600);
+    ini_set("upload_max_filesize","2048M");
+    ini_set("post_max_size","2048M");
+?>
 <html><!-- #BeginTemplate "/Templates/template0.dwt" -->
 <head>
 <script language="Javascript">
@@ -52,11 +58,10 @@ function fabFormValidate()
         }
         
     // Did the user select a service?
-    if (document.forms["contactRich"]["cTopic"].value=="null")
-        {
-            alert("Please tell us what you need help with.");
-            return false;
-        }
+    if (document.forms["contactRich"]["cTopic"].value=="null") {
+        alert("Please tell us what you need help with.");
+        return false;
+    }
     
     document.getElementById("isValid").value="yes";
     return true;
