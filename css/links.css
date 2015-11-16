@@ -1,0 +1,62 @@
+.contactButton {
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+    font-size: 19px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    width: 115px;
+}
+
+#contact_alert, #new_customers_alert {
+    position: relative;
+    display: none;
+    width: 424px;
+}
+
+.contact_button_container {
+    width: 424px;
+    float: left;
+    padding-bottom: 25px;
+}
+
+.contact_message {
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    width: 424px;
+}
+
+.contact_message h3 {
+    width: 424px;
+    text-align: center;
+}
+
+#new_customer {
+    position: relative;
+    right: 15px;
+    float: right;
+}
+
+#returning_customer {
+    position: relative;
+    left: 15px;
+    float: left;
+}
+
+#route_button {
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    position: relative;
+    text-align: center;
+    background-color: #aeaeae;
+}
+
+.subsection2 { 
+    text-transform: none !important;
+}
+
+.blockPage {
+    width: 424px!important;
+}

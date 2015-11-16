@@ -10,6 +10,8 @@ A.set2:visited {text-decoration: none; color: #0000af; font-size: 10pt}
 A.set2:hover {font-weight:bold}
 </style>
 <link rel="stylesheet" type="text/css" href="menustyles.css">
+<link rel="stylesheet" type="text/css" href="/css/links.css">
+<script src="/js/jquery.blockUI.js"></script>
 <!-- begin menu -->
 <div id="menu">
 
@@ -21,7 +23,7 @@ A.set2:hover {font-weight:bold}
 		</li>
 	<!-- Contact -->
 		<li class="folder">
-		   <a href="contact.php">Contact</a>
+		   <a onclick="contactClick();">Contact</a>
 		</li>
 	<!-- About -->
 		<li class="folder">
@@ -99,3 +101,54 @@ A.set2:hover {font-weight:bold}
 
     <tr><td style="font-family: 'Arial','Helvetica'; font-size: 11pt; font-style: italic"><a class="set1">Neighborhood Presentations</a></td></tr>
 </table>-->
+<div id="contact_alert">
+    <div class="contact_message">
+        <h3>Are you a new or returning customer?</h3>
+    </div>
+    <div class="contact_button_container">
+        <div id="returning_customer" class="contactButton">
+            Returning
+        </div>
+        <div id="new_customer" class="contactButton">
+            New
+        </div>
+    </div>
+</div>
+
+<div id="new_customers_alert">
+    <div class="contact_message subsection subsection2">        
+        Thanks for considering Portage Park Handyman for your handyman services. Unfortunately, 
+        we are not taking on new customers before 2016. We recommend Jim at Punch List for his 
+        experience and expertise. Jim will also offer a 5% discount for anyone who mentions that 
+        they found him through the Portage Park Handyman Service.
+    </div>
+    <div class="contact_button_container">
+        <div id="route_button" class="subsection subsection2">
+            OK; go to www.yourpunchlist.com
+        </div>
+    </div>
+    
+</div>
+<script>
+function contactClick() {
+    $.blockUI({
+        message: $('#contact_alert')
+    });
+}
+
+$('#returning_customer').on('click', function() {
+    $.unblockUI();
+    location.href = 'contact.php';
+});
+
+$('#new_customer').on('click', function() {
+        $.blockUI({
+            message: $('#new_customers_alert')
+        });
+});
+
+$('#route_button').on('click', function() {
+    $.unblockUI();
+    location.href = 'http://www.yourpunchlist.com';
+});
+</script>
