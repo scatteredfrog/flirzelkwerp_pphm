@@ -60,3 +60,5 @@ caption {  font-family: Arial, Helvetica, sans-serif; font-size: 11pt; font-styl
     font-variant: small-caps;
     font-weight: bold;
 }
+.publicForm {    background-color: #b1ffcb; }
+.privateForm { background-color: #ffc2c2; }
