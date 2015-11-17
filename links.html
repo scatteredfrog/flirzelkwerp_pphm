@@ -149,6 +149,7 @@ $('#new_customer').on('click', function() {
 
 $('#route_button').on('click', function() {
     $.unblockUI();
+    $.post('count_red.php');
     location.href = 'http://www.yourpunchlist.com';
 });
 </script>
