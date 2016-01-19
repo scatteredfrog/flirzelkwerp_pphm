@@ -11,7 +11,7 @@
         <?php
         $error_exists   = false;
 //        $masterEmail    = "seancourtney@fab4it.com";
-        $masterEmail    = "handyman4chicago@aol.com";
+        $masterEmail    = "webmaster@portageparkhandyman.com";
         require 'PHPMailer-master/PHPMailerAutoload.php';
         include "fabForm.php";
         $name           = $_POST['cName'];
